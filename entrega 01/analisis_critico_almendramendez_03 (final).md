@@ -1,4 +1,4 @@
-Readme.md
+readme.md
 
 
 # **Análisis crítico Almendra Mendez**

@@ -1,5 +1,5 @@
 # Análisis Crítico: Andrea Antonello  
-![alt text][def]
+![alt text](<kpop.png>)
 
 ### 1. ¿Por qué es relevante para ti realizar este tema?  
 
@@ -26,5 +26,3 @@ El impacto que espero generar es que las personas puedan estar un poco más abie
 
 Quiero aprender lo más que pueda sobre programas. Es una actividad que me enseñaron en el colegio y que, cuatro años después, logro recordar lo mucho que me gustaba hacerla.  
 
-
-[def]: entrega%2001/kpop_andrea.png

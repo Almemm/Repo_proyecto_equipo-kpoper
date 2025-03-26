@@ -1,5 +1,5 @@
 # Análisis Crítico: Andrea Antonello  
-![alt text](entrega%2001/imagenes/kpop.png)
+![alt text](kpop.png)
 
 
 

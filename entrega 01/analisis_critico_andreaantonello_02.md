@@ -1,5 +1,6 @@
 # Análisis Crítico: Andrea Antonello  
-![alt text](<entrega 01/imagenes/kpop.png>)
+![alt text](entrega%2001/imagenes/kpop.png)
+
 
 
 ### 1. ¿Por qué es relevante para ti realizar este tema?  

@@ -1,5 +1,4 @@
 # Análisis Crítico: Andrea Antonello  
-![alt text](kpop_andrea.jpeg)
 
 ### 1. ¿Por qué es relevante para ti realizar este tema?  
 

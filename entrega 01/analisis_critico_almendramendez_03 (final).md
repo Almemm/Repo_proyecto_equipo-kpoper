@@ -3,6 +3,8 @@ readme.md
 
 # **Análisis crítico Almendra Mendez**
 
+![alt text](<imagenes/BTS Chile.jpg>)
+
 ### ¿Por qué es relevante para ti realizar este tema? 
 
 Para mí, es relevante investigar y desarrollar el tema del K-pop y su impacto en Chile porque, además de ser fanática de varios grupos de esta industria (BTS, TXT, Twice, New Jeans, (G)I-DLE, etc.), me interesa comprender el cómo esta música ha logrado establecerse en el país, quizás desde antes de la pandemia. 

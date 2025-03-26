@@ -1,4 +1,5 @@
 # **Análisis Crítico Daniela Avendaño** 
+![alt text](<imagenes/K-POP EN CHILE.png>)
 ### **1. ¿Por qué es relevante para mí este tema?** 
 
 Al ser una gran fan del género K-POP desde hace alrededor de 8 años, el tema es de gran interés mío. Siempre me ha gustado indagar más en temas de cifras que involucren a mis _idols_ y grupos favoritos, sobre todo si entremedio Chile aparece como un gran factor de apoyo. Este trabajo me va a permitir descubrir más sobre esto y me va a brindar más conocimientos “numéricos” (por decirlo de alguna forma) para poder informar correctamente a mis amistades que gustan de escuchar este estilo de música, así mismo como también para poder afirmar, por ejemplo, que es viable que ciertos grupos y solistas vuelvan o pisen por primera vez tierras chilenas, aportando así a la comunidad _kpoper_ de nuestro país. 

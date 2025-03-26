@@ -2,7 +2,6 @@
 ![alt text](kpop.png)
 
 
-
 ### 1. ¿Por qué es relevante para ti realizar este tema?  
 
 La razón por la que para mí es relevante realizar este tema es porque logro reconocer el gran impacto que ha tenido el mundo asiático en Chile. Puede ser que, al final del día, no sea la mayor fanática del K-pop, pero la verdad es que todos hemos terminado siendo influenciados por esto. Yo me acuerdo de que en 2017 no me interesaba saber nada de este mundo, esto fue hasta que conocí a mi mejor amiga, quien me presentó estas canciones que nunca había escuchado. De esa manera, de a poco he entrado cada vez más en esta cultura.  

@@ -16,15 +16,11 @@ Nuestro proyecto tiene por objetivo analizar la evolución del consumo de K-pop 
 
 ## Antecedentes del tema 
 
-El impacto del K-pop en Chile ha sido reporteado en varias ocasiones en los últimos años. Por mencionar ejemplos, BíoBío Chile, a finales de 2020, entrevistó a los autores de "K-BOOK: La guía definitiva del K-POP" (primer libro chileno dedicado al género). 
+El impacto del K-pop en Chile ha sido reporteado en varias ocasiones en los últimos años. Por mencionar ejemplos, BíoBío Chile, a finales de 2020, [entrevistó a los autores de "K-BOOK: La guía definitiva del K-POP"](https://www.biobiochile.cl/noticias/artes-y-cultura/libros/2020/11/09/autores-del-k-book-afirman-que-chile-es-la-capital-latina-del-k-pop-y-dan-consejos-a-los-padres.shtml) (primer libro chileno dedicado al género). 
 
 En la entrevista, los autores mencionaron que Chile es uno de los países que más postea en Twitter (ahora X) sobre K-POP, "lo que también se refleja en la cantidad de conciertos de grupos K-pop, festivales y distintas experiencias que han permitido ser el núcleo de América Latina más desarrollado en torno a este movimiento"
 
-[BíoBío] (https://www.biobiochile.cl/noticias/artes-y-cultura/libros/2020/11/09/autores-del-k-book-afirman-que-chile-es-la-capital-latina-del-k-pop-y-dan-consejos-a-los-padres.shtml)
-
-Otro caso, es la columna de opinión publicada en 2019 por POTQ Magazine que ya apuntaba en esta dirección al analizar el evento **SM Town in Chile**. En este artículo se enfatiza cómo la realización de un festival de tal magnitud, que tuvo dos fechas *(18 y 19 de enero de 2019 en el Estadio Nacional)*, confirmaba la creciente importancia de la fanaticada chilena para la industria y empresas del K-pop. Desde entonces, el interés por estos conciertos se ha mantenido en aumento, consolidando al país como un mercado atractivo para las empresas coreanas y productoras nacionales. 
-
-[SM Town] (https://www.potq.net/resenas/smtown-en-chile/)
+Otro caso, es la [columna de opinión publicada en 2019 por POTQ Magazine](https://www.potq.net/resenas/smtown-en-chile/) que ya apuntaba en esta dirección al analizar el evento **SM Town in Chile**. En este artículo se enfatiza cómo la realización de un festival de tal magnitud, que tuvo dos fechas *(18 y 19 de enero de 2019 en el Estadio Nacional)*, confirmaba la creciente importancia de la fanaticada chilena para la industria y empresas del K-pop. Desde entonces, el interés por estos conciertos se ha mantenido en aumento, consolidando al país como un mercado atractivo para las empresas coreanas y productoras nacionales. 
 
 Diversas fuentes también han recopilado datos sobre la presencia del K-pop en el país, muchas veces destacando hitos claves como el llamado *"Boom BTS"* que impulsó a una nueva generación de fanáticos, un aumento del número de conciertos e incluso de tiendas físicas relacionadas con la venta de discos, merch y otros productos. 
 
@@ -71,7 +67,7 @@ Para contar nuestra historia utilizaríamos elementos digitales como: mapas inte
 Los elementos nos podrían ayudar a contar la historia al situar al lector en el proceso de venta de entradas o en un concierto, para que sea una experiencia inmersiva. Luego se agregarían otros elementos (como luces de _lightstick_ y música) para que sea algo entretenido de ver.
 
 ![alt text](<imagenes/Entradas-skz.png>)
-**_(Ejemplo utilizando ubicaciones dentro de un recinto, sacado de https://www.ticketmaster.cl/event/stray-kids-dominate-world-tour-2025_**)  
+**_(Ejemplo utilizando ubicaciones dentro de un recinto, sacado de [Ticket Master](https://www.ticketmaster.cl/event/stray-kids-dominate-world-tour-2025)_**)  
 
 ## Resultados 
 

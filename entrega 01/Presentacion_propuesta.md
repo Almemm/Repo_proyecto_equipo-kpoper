@@ -70,7 +70,7 @@ Para contar nuestra historia utilizaríamos elementos digitales como: mapas inte
 
 Los elementos nos podrían ayudar a contar la historia al situar al lector en el proceso de venta de entradas o en un concierto, para que sea una experiencia inmersiva. Luego se agregarían otros elementos (como luces de _lightstick_ y música) para que sea algo entretenido de ver.
 
-![alt text](imagenes/Entradas-skz.png)
+![alt text](<imagenes/Entradas-skz.png>)
 **_(Ejemplo utilizando ubicaciones dentro de un recinto, sacado de https://www.ticketmaster.cl/event/stray-kids-dominate-world-tour-2025_**)  
 
 ## Resultados 

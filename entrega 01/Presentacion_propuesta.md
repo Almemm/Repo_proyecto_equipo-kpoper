@@ -12,6 +12,8 @@ Nuestro proyecto tiene por objetivo analizar la evolución del consumo de K-pop 
 
 2. Chile es la capital latinoamericana del K-pop debido al nivel de consumo de música en las diversas plataformas digitales/musicales y a la cantidad de conciertos realizados en el país, que aumentan año a año. Este análisis podría hacer posible la participación de grupos de este género en eventos como el Festival de Viña del Mar 2026. 
 
+3. Demostrar la viabilidad de que el K-POP llena recintos, por lo que es factible que productoras chilenas traigan artistas coreanos.
+
 ## Antecedentes del tema 
 
 El impacto del K-pop en Chile ha sido reporteado en varias ocasiones en los últimos años. Por mencionar ejemplos, BíoBío Chile, a finales de 2020, entrevistó a los autores de "K-BOOK: La guía definitiva del K-POP" (primer libro chileno dedicado al género). 
@@ -60,13 +62,21 @@ Datos confiables y no confiables:
 
 ## Historia visual 
 
-...
+La historia de nuestro proyecto es sobre cómo Chile ha comenzado a establecerse como una **base del K-POP a nivel latinoamericano**, junto con el crecimiento del género a nivel global, logrando consolidarse como una “capital” de su difusión y masificación. 
 
+Lo nuevo de nuestra historia sería el entregar un **análisis cuantitativo sobre el impacto y crecimiento del k-pop en el país**, respaldado esta vez por datos verificados y no simplemente especulaciones.  
+
+Para contar nuestra historia utilizaríamos elementos digitales como: mapas interactivos, gráficos, comparaciones, videos, música, entre otros, todo con el fin de enriquecer nuestro relato. 
+
+Los elementos nos podrían ayudar a contar la historia al situar al lector en el proceso de venta de entradas o en un concierto, para que sea una experiencia inmersiva. Luego se agregarían otros elementos (como luces de _lightstick_ y música) para que sea algo entretenido de ver.
+
+![alt text](imagenes/Entradas-skz.png)
+**_(Ejemplo utilizando ubicaciones dentro de un recinto, sacado de https://www.ticketmaster.cl/event/stray-kids-dominate-world-tour-2025_**)  
 
 ## Resultados 
 
-Lo mínimo que podemos contar como historia con los datos que tenemos es crear un análsis comparativo entre países de la región. A la vez, que podemos teorizar sobre las tendencias del K-pop y su eventual evolución en nuestro país. 
+Lo mínimo que podemos contar con los datos que tenemos es crear un **análsis comparativo entre países de la región**. A la vez, que podemos **teorizar sobre las tendencias del K-pop y su eventual evolución en nuestro país**. 
 
-Lo máximo sería: crear un análisis que permita hacer una proyección a futuro (corto, mediano o largo plazo) sobre el futuro del K-pop en Chile, y quién sabe, quizás demostrar e incentivar a más productoras a traer a grupos o solistas del K-pop. 
+Lo máximo sería: crear un análisis que permita hacer una **proyección a futuro (corto, mediano o largo plazo)** sobre el K-pop en Chile, y, quién sabe, quizás demostrar e **incentivar a más productoras a traer a grupos o solistas del K-pop**. 
 
 

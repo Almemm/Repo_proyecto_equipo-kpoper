@@ -12,7 +12,7 @@ Habiendo creado la tabla de cada artista, comencé a pegar los nombres de los to
 
 Llegué a una parte en la que tuve que comenzar a buscar información sobre la capacidad de los recintos (para evaluar la cantidad de personas que pudieron haber asistido a los conciertos), cosa que demoró alrededor de 2 horas poder completar efectivamente. 
 
-El último ítem para agregar en la tabla fue el precio de los conciertos, cosa que resultó complejo al no existir un registro totalmente oficial de ello, poniendo en en duda si en verdad era necesario colocarlo o no. Al final, decidí seguir buscando, ya que en un análisis futuro, podríamos usar esos datos para realizar una comparación de los precios de los conciertos. 
+El último ítem que querpia agregar en la tabla  es el precio de los conciertos, cosa que resultó complejo al no existir un registro totalmente oficial de ello (no está muy completo). Espero tal vez para futuras entregas (con más tiempo), sí pueda agregar este ítem.
 
 Ya con las cuatro tablas creadas con los datos ya mencionados, estos fueron unidos en una nueva tabla que agregaba la columna de “grupos”. 
 
@@ -20,7 +20,7 @@ Ya con las cuatro tablas creadas con los datos ya mencionados, estos fueron unid
 
 Excel fue fundamental para crear las tablas (usando la función de “Hojas” para separar los cuatro grupos).  
 
-Otra herramienta que utilicé, principalmente para que me ayudara a ordenar los datos expuestos, fue ChatGPT. Muchos datos se encontraban desordenados en las Wikis, por lo que, antes de pegarlos en la tabla, le pedí a esta IA que me ayudara a ordenar según el orden en el que quería los ítems (Sobre todo en temas de fechas, nombres de tours y recintos). Para encontrar datos más complejos (como los precios de las entradas), también le pedí ayuda en ocasiones.  
+Otra herramienta que utilicé, principalmente para que me ayudara a ordenar los datos expuestos, fue ChatGPT. Muchos datos se encontraban desordenados en las Wikis, por lo que, antes de pegarlos en la tabla, le pedí a esta IA que me ayudara a ordenar según el orden en el que quería los ítems (Sobre todo en temas de fechas, nombres de tours y recintos). 
 
 ## *__Fuentes:__* 
 
@@ -32,22 +32,16 @@ Otra herramienta que utilicé, principalmente para que me ayudara a ordenar los 
 
 - __Wikipedia sobre los recintos:__ las diversas pestañas de Wikipedia sobre los recintos permitieron rellenar la columna de “capacidad” de cada concierto realizado.  
 
-- __Páginas de venta de entradas:__ Algunos tours y conciertos aún tenían pestañas en las páginas donde se compraron las entradas, en algunos casos contribuyendo a el dato de los precios de las entradas. 
-
 ## *__Preguntas posibles:__* 
 
 Algunas preguntas posibles podrían ser: 
 
-1. ¿Qué país ha tenido más conciertos? 
+1. ¿Qué país ha tenido más conciertos?
 
-2. ¿Qué grupo tiene los precios más altos de entradas registrados? 
+2. ¿Qué ciudad ha sido la más visitada por los grupos?
 
-3. ¿Qué grupo tiene los precios más bajos de entradas registrados? 
+3. ¿Qué grupo ha convocado al mayor grupo de personas? 
 
-4. ¿Qué grupo ha convocado al mayor grupo de personas? 
+4. ¿Qué grupo ha tenido menos conciertos?
 
-5. ¿Qué país tiene los precios más altos de entradas? 
-
-6. ¿Qué país tiene los precios más bajos de entradas? 
-
-7. ¿Qué paso durante la Pandemia (2020) con los conciertos? ¿Hay? 
+5. ¿Qué grupo ha convocado al menor grupo de personas?

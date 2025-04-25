@@ -1,4 +1,4 @@
-# *__DOCUMENTACIÓN__* 
+# __DOCUMENTACIÓN__ 
 
 # *__Sobre la limpieza de datos:__* 
 

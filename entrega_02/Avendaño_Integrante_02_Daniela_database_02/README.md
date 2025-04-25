@@ -20,7 +20,7 @@ Ya con las cuatro tablas creadas con los datos ya mencionados, estos fueron unid
 
 Excel fue fundamental para crear las tablas (usando la función de “Hojas” para separar los cuatro grupos).  
 
-Otra herramienta que utilicé, principalmente para que me ayudara a ordenar los datos expuestos, fue ChatGPT. Muchos datos se encontraban desordenados en las Wikis, por lo que, antes de pegarlos en la tabla, le pedí a esta IA que me ayudara a ordenar según el orden en el que quería los ítems (Sobre todo en temas de fechas, nombres de tours y recintos).  
+Otra herramienta que utilicé, principalmente para que me ayudara a ordenar los datos expuestos, fue ChatGPT. Muchos datos se encontraban desordenados en las Wikis, por lo que, antes de pegarlos en la tabla, le pedí a esta IA que me ayudara a ordenar según el orden en el que quería los ítems (Sobre todo en temas de fechas, nombres de tours y recintos). Para encontrar datos más complejos, también le pedí ayuda en ocasiones.  
 
 ## *__Fuentes:__* 
 

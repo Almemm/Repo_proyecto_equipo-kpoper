@@ -1,5 +1,6 @@
 # Documentación del proceso de limpieza de datos
 
+
 ## Encontrar los datos
 
 Uno de nuestros principales desafíos para la realización de este trabajo fue la inexistencia de una base de datos oficial o consolidada sobre conciertos de K-pop, sobre todo con información específica sobre su llegada a Chile. Por nuestra hipótesis supimos que teníamos que abordar la relación entre el K-pop y América Latina, con foco principal estando en Chile, por esto era vital identificar qué grupos habían hecho conciertos en nuestro territorio. 

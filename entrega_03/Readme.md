@@ -1,0 +1,1 @@
+Hola! borrador del readme grupal :)

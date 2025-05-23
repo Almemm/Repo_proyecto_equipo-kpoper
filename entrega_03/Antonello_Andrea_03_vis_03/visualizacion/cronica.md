@@ -4,7 +4,7 @@ Por años, Corea del Sur fue el epicentro indiscutido del K-pop. Pero hoy, los e
 
 Desde la segunda generación del K-pop, la industria surcoreana entendió el potencial que tenía el negocio. Ya no se enfocaban únicamente en el arte que estaban logrando generar, sino también en las posibles ganancias futuras. Así comenzó una expansión que hoy posiciona al K-pop como una de las industrias culturales más rentables a nivel global, con mercados como Japón, Brasil o incluso Chile sumándose al fenómeno no solo como fans, sino como actores relevantes para las ganancias económicas que genera la industria.
 
-![Visualización de precios](/Users/andrea/Documents/GitHub/Repo_proyecto_equipo-kpoper/entrega_03/Antonello_Andrea_03_vis_03/visualizacion/vis_01&02.jpg)
+![Visualización de precios](imagenes/vis_01&02.jpg)
 
 ---
 

@@ -2,7 +2,7 @@
 
 *Hoy podemos afirmar que el Kpop dejó de ser un “simple fenómeno” o una moda pasajera, sino que en un poco más de 35 años ha conseguido una expansión a nivel global, trascendiendo fronteras e idiomas, para convertirse en una industria musical consolidada pero que también ha influido en aspectos culturales, sociales y económicos para Corea del Sur.*
 
-![alt text](visualizacion\grupos_kpop_visualización.jpg)
+![alt text](grupos_kpop_visualización.jpg)
 
 
 ## Pero ¿cómo fue el inicio del Kpop? 

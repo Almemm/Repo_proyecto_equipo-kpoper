@@ -2,7 +2,7 @@
 
 El K-POP, tal como dice su nombre, es un género de música que surge desde Corea del Sur (*“Korean Pop [Pop Coreano]”*). ¿Pero es realmente Corea el público más explorado por el género en temas de concierto? 
 
-![alt text](vis_01.jpg.jpg)
+![alt text](vis_01.jpg)
 
 Como muestran los datos, Japón resulta ser el mercado con más conciertos de K-POP registrados, lo que demuestra que es uno de los mercados más tentadores para visitar por los grupos de las diversas generaciones. ¿Pero qué lo hace atractivo para que los grupos vuelvan a visitar? 
 

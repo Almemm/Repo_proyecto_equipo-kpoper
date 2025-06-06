@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "vconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "GENERO", "legend": {"title": "G\u00e9nero"}, "scale": {"scheme": "category10"}, "type": "nominal"}, "opacity": {"condition": {"param": "param_2", "value": 0.9}, "value": 0.1}, "tooltip": [{"field": "A\u00d1O_DEBUT", "type": "quantitative"}, {"field": "Cantidad", "type": "quantitative"}, {"field": "GENERO", "type": "nominal"}], "x": {"axis": {"title": "A\u00f1o de debut"}, "field": "A\u00d1O_DEBUT", "type": "ordinal"}, "y": {"field": "Cantidad", "title": "Cantidad de grupos", "type": "quantitative"}}, "name": "view_2"}, {"mark": {"type": "point"}, "encoding": {"color": {"field": "GENERO", "legend": {"title": "G\u00e9nero"}, "scale": {"scheme": "category10"}, "type": "nominal"}, "opacity": {"condition": {"param": "param_3", "value": 1, "empty": false}, "value": 0.3}, "x": {"axis": {"title": "A\u00f1o de debut"}, "field": "A\u00d1O_DEBUT", "type": "ordinal"}, "y": {"axis": {"title": "Cantidad de Grupos"}, "field": "Cantidad", "type": "quantitative"}}, "title": "Distribuci\u00f3n de grupos por a\u00f1o"}], "data": {"name": "data-28f491103aa9db9df66a80c5b697cc4e"}, "params": [{"name": "param_2", "select": {"type": "interval", "encodings": ["x"]}, "views": ["view_2"]}, {"name": "param_3", "select": {"type": "point", "fields": ["A\u00d1O_DEBUT"], "on": "mouseover"}, "views": ["view_2"]}], "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-28f491103aa9db9df66a80c5b697cc4e": [{"A\u00d1O_DEBUT": 1990, "GENERO": "Hombres", "Cantidad": 3}, {"A\u00d1O_DEBUT": 1992, "GENERO": "Hombres", "Cantidad": 1}, {"A\u00d1O_DEBUT": 1992, "GENERO": "Mixto", "Cantidad": 1}, {"A\u00d1O_DEBUT": 1993, "GENERO": "Hombres", "Cantidad": 2}, {"A\u00d1O_DEBUT": 1994, "GENERO": "Hombres", "Cantidad": 1}, {"A\u00d1O_DEBUT": 1994, "GENERO": "Mixto", "Cantidad": 4}, {"A\u00d1O_DEBUT": 1995, "GENERO": "Hombres", "Cantidad": 3}, {"A\u00d1O_DEBUT": 1996, "GENERO": "Hombres", "Cantidad": 2}, {"A\u00d1O_DEBUT": 1996, "GENERO": "Mixto", "Cantidad": 2}, {"A\u00d1O_DEBUT": 1997, "GENERO": "Hombres", "Cantidad": 4}, {"A\u00d1O_DEBUT": 1997, "GENERO": "Mujeres", "Cantidad": 3}, {"A\u00d1O_DEBUT": 1998, "GENERO": "Hombres", "Cantidad": 4}, {"A\u00d1O_DEBUT": 1998, "GENERO": "Mixto", "Cantidad": 2}, {"A\u00d1O_DEBUT": 1998, "GENERO": "Mujeres", "Cantidad": 3}, {"A\u00d1O_DEBUT": 1999, "GENERO": "Hombres", "Cantidad": 5}, {"A\u00d1O_DEBUT": 1999, "GENERO": "Mujeres", "Cantidad": 4}, {"A\u00d1O_DEBUT": 2000, "GENERO": "Hombres", "Cantidad": 2}, {"A\u00d1O_DEBUT": 2000, "GENERO": "Mujeres", "Cantidad": 1}, {"A\u00d1O_DEBUT": 2001, "GENERO": "Hombres", "Cantidad": 1}, {"A\u00d1O_DEBUT": 2001, "GENERO": "Mixto", "Cantidad": 3}, {"A\u00d1O_DEBUT": 2001, "GENERO": "Mujeres", "Cantidad": 7}, {"A\u00d1O_DEBUT": 2002, "GENERO": "Hombres", "Cantidad": 5}, {"A\u00d1O_DEBUT": 2002, "GENERO": "Mixto", "Cantidad": 1}, {"A\u00d1O_DEBUT": 2002, "GENERO": "Mujeres", "Cantidad": 3}, {"A\u00d1O_DEBUT": 2003, "GENERO": "Hombres", "Cantidad": 8}, {"A\u00d1O_DEBUT": 2003, "GENERO": "Mujeres", "Cantidad": 1}, {"A\u00d1O_DEBUT": 2004, "GENERO": "Hombres", "Cantidad": 1}, {"A\u00d1O_DEBUT": 2004, "GENERO": "Mujeres", "Cantidad": 1}, {"A\u00d1O_DEBUT": 2005, "GENERO": "Hombres", "Cantidad": 9}, {"A\u00d1O_DEBUT": 2005, "GENERO": "Mujeres", "Cantidad": 6}, {"A\u00d1O_DEBUT": 2006, "GENERO": "Hombres", "Cantidad": 6}, {"A\u00d1O_DEBUT": 2006, "GENERO": "Mixto", "Cantidad": 2}, {"A\u00d1O_DEBUT": 2006, "GENERO": "Mujeres", "Cantidad": 3}, {"A\u00d1O_DEBUT": 2007, "GENERO": "Hombres", "Cantidad": 7}, {"A\u00d1O_DEBUT": 2007, "GENERO": "Mixto", "Cantidad": 1}, {"A\u00d1O_DEBUT": 2007, "GENERO": "Mujeres", "Cantidad": 6}, {"A\u00d1O_DEBUT": 2008, "GENERO": "Hombres", "Cantidad": 11}, {"A\u00d1O_DEBUT": 2008, "GENERO": "Mujeres", "Cantidad": 3}, {"A\u00d1O_DEBUT": 2009, "GENERO": "Hombres", "Cantidad": 8}, {"A\u00d1O_DEBUT": 2009, "GENERO": "Mixto", "Cantidad": 2}, {"A\u00d1O_DEBUT": 2009, "GENERO": "Mujeres", "Cantidad": 13}, {"A\u00d1O_DEBUT": 2010, "GENERO": "Hombres", "Cantidad": 19}, {"A\u00d1O_DEBUT": 2010, "GENERO": "Mixto", "Cantidad": 6}, {"A\u00d1O_DEBUT": 2010, "GENERO": "Mujeres", "Cantidad": 16}, {"A\u00d1O_DEBUT": 2011, "GENERO": "Hombres", "Cantidad": 24}, {"A\u00d1O_DEBUT": 2011, "GENERO": "Mixto", "Cantidad": 3}, {"A\u00d1O_DEBUT": 2011, "GENERO": "Mujeres", "Cantidad": 37}, {"A\u00d1O_DEBUT": 2012, "GENERO": "Hombres", "Cantidad": 41}, {"A\u00d1O_DEBUT": 2012, "GENERO": "Mixto", "Cantidad": 2}, {"A\u00d1O_DEBUT": 2012, "GENERO": "Mujeres", "Cantidad": 45}, {"A\u00d1O_DEBUT": 2013, "GENERO": "Hombres", "Cantidad": 39}, {"A\u00d1O_DEBUT": 2013, "GENERO": "Mujeres", "Cantidad": 28}, {"A\u00d1O_DEBUT": 2014, "GENERO": "Hombres", "Cantidad": 42}, {"A\u00d1O_DEBUT": 2014, "GENERO": "Mixto", "Cantidad": 3}, {"A\u00d1O_DEBUT": 2014, "GENERO": "Mujeres", "Cantidad": 50}, {"A\u00d1O_DEBUT": 2015, "GENERO": "Hombres", "Cantidad": 31}, {"A\u00d1O_DEBUT": 2015, "GENERO": "Mixto", "Cantidad": 1}, {"A\u00d1O_DEBUT": 2015, "GENERO": "Mujeres", "Cantidad": 44}, {"A\u00d1O_DEBUT": 2016, "GENERO": "Hombres", "Cantidad": 24}, {"A\u00d1O_DEBUT": 2016, "GENERO": "Mixto", "Cantidad": 3}, {"A\u00d1O_DEBUT": 2016, "GENERO": "Mujeres", "Cantidad": 49}, {"A\u00d1O_DEBUT": 2017, "GENERO": "Hombres", "Cantidad": 41}, {"A\u00d1O_DEBUT": 2017, "GENERO": "Mixto", "Cantidad": 1}, {"A\u00d1O_DEBUT": 2017, "GENERO": "Mujeres", "Cantidad": 49}, {"A\u00d1O_DEBUT": 2018, "GENERO": "Hombres", "Cantidad": 27}, {"A\u00d1O_DEBUT": 2018, "GENERO": "Mixto", "Cantidad": 1}, {"A\u00d1O_DEBUT": 2018, "GENERO": "Mujeres", "Cantidad": 32}, {"A\u00d1O_DEBUT": 2019, "GENERO": "Hombres", "Cantidad": 31}, {"A\u00d1O_DEBUT": 2019, "GENERO": "Mixto", "Cantidad": 1}, {"A\u00d1O_DEBUT": 2019, "GENERO": "Mujeres", "Cantidad": 24}, {"A\u00d1O_DEBUT": 2020, "GENERO": "Hombres", "Cantidad": 32}, {"A\u00d1O_DEBUT": 2020, "GENERO": "Mixto", "Cantidad": 3}, {"A\u00d1O_DEBUT": 2020, "GENERO": "Mujeres", "Cantidad": 29}, {"A\u00d1O_DEBUT": 2021, "GENERO": "Hombres", "Cantidad": 14}, {"A\u00d1O_DEBUT": 2021, "GENERO": "Mixto", "Cantidad": 1}, {"A\u00d1O_DEBUT": 2021, "GENERO": "Mujeres", "Cantidad": 18}, {"A\u00d1O_DEBUT": 2022, "GENERO": "Hombres", "Cantidad": 11}, {"A\u00d1O_DEBUT": 2022, "GENERO": "Mujeres", "Cantidad": 22}, {"A\u00d1O_DEBUT": 2023, "GENERO": "Hombres", "Cantidad": 27}, {"A\u00d1O_DEBUT": 2023, "GENERO": "Mujeres", "Cantidad": 19}, {"A\u00d1O_DEBUT": 2024, "GENERO": "Hombres", "Cantidad": 21}, {"A\u00d1O_DEBUT": 2024, "GENERO": "Mujeres", "Cantidad": 24}, {"A\u00d1O_DEBUT": 2025, "GENERO": "Hombres", "Cantidad": 3}, {"A\u00d1O_DEBUT": 2025, "GENERO": "Mujeres", "Cantidad": 2}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+<div class="vega-visualization" id="vega-visualization-f0dec9838f374a54af33b36d4c2c50b1"></div>
+<script type="text/javascript">
+  const spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "layer": [{"mark": {"type": "bar", "cornerRadius": 8, "height": 14}, "encoding": {"color": {"field": "mercado", "legend": null, "type": "nominal"}, "x": {"field": "entrada m\u00e1s barata", "scale": {"domain": [0, 2000]}, "title": "Precio m\u00e1s barato (USD)", "type": "quantitative"}, "x2": {"field": "entrada m\u00e1s cara"}, "y": {"field": "mercado", "sort": "-x", "title": "Mercado", "type": "nominal"}}}, {"mark": {"type": "text", "align": "right", "dx": -5}, "encoding": {"text": {"field": "entrada m\u00e1s barata", "type": "quantitative"}, "x": {"field": "entrada m\u00e1s barata", "type": "quantitative"}, "y": {"field": "mercado", "sort": "-x", "type": "nominal"}}}, {"mark": {"type": "text", "align": "left", "dx": 5}, "encoding": {"text": {"field": "entrada m\u00e1s cara", "type": "quantitative"}, "x": {"field": "entrada m\u00e1s cara", "type": "quantitative"}, "y": {"field": "mercado", "sort": "-x", "type": "nominal"}}}], "data": {"name": "data-be394de9dac12892b4c2e5a32602277d"}, "height": 400, "title": {"text": "Rango de precios de entradas por mercado", "subtitle": "Precios entre $0 y $2000 USD"}, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-be394de9dac12892b4c2e5a32602277d": [{"mercado": "Am\u00e9rica Del Norte", "entrada m\u00e1s barata": 50.0, "entrada m\u00e1s cara": 235.0}, {"mercado": "Am\u00e9rica Latina", "entrada m\u00e1s barata": 18.0, "entrada m\u00e1s cara": 330.0}, {"mercado": "Brasil", "entrada m\u00e1s barata": 10.0, "entrada m\u00e1s cara": 457.0}, {"mercado": "China", "entrada m\u00e1s barata": 25.0, "entrada m\u00e1s cara": 348.0}, {"mercado": "Corea Del Sur", "entrada m\u00e1s barata": 0.0, "entrada m\u00e1s cara": 230.0}, {"mercado": "Estados Unidos", "entrada m\u00e1s barata": 29.0, "entrada m\u00e1s cara": 405.0}, {"mercado": "Europa", "entrada m\u00e1s barata": 43.0, "entrada m\u00e1s cara": 743.0}, {"mercado": "Jap\u00f3n", "entrada m\u00e1s barata": 40.0, "entrada m\u00e1s cara": 400.0}, {"mercado": "M\u00e9xico", "entrada m\u00e1s barata": 25.0, "entrada m\u00e1s cara": 311.0}]}};
+  const embedOpt = {};
+  vegaEmbed('#vega-visualization-f0dec9838f374a54af33b36d4c2c50b1', spec, embedOpt).catch(console.error);
+</script>
+</body>
+</html>

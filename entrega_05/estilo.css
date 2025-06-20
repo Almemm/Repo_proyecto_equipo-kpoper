@@ -23,13 +23,6 @@ P {
     color: #413e3e;
 }
 
-hr {
-    border: 0;
-    height: 85px; 
-    background-color: #d0d0e1; 
-    margin: 20px 0; 
-}
-
 header {
     background-color: #d0d0e1;
     display: flex;
@@ -104,6 +97,11 @@ body {
 .INICIO {
     text-align: center;
     margin-top: 50px;
+
+}
+
+.INICIO img {
+    transform: translateY(-20%);
 }
 
 .MENSAJE {
@@ -112,9 +110,10 @@ body {
     padding: 20px; 
     border: 3px solid #9daece; 
     border-radius: 20px; 
-    max-width: 400px; 
+    max-width: 650px; 
     margin: 20px auto; 
     text-align: justify; 
+    transform: translateY(-25%);
 }
 
 .MENSAJE p:nth-child(1),

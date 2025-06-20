@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "TITULOS";
+    src: url("fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TEXTO";
+    src: url("fonts/Gowun_Dodum/GowunDodum-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+    font-family: "TITULOS";
+}
+
+P {
+    font-family: "TEXTO";
+}
+
+
+

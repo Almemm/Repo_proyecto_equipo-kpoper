@@ -116,10 +116,18 @@ body {
     transform: translateY(-25%);
 }
 
-.MENSAJE p:nth-child(1),
-.MENSAJE p:nth-child(2) {
+
+.spotify {
+    width: 600px;
+    height: fit-content;
+    transform: translateX(5%);
+}
+
+.MENSAJE p:nth-child(1) {
     text-align: center;
 }
+
+
 
 .container {
     display: flex;

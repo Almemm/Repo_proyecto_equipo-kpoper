@@ -15,18 +15,87 @@
 
 h1, h2 {
     font-family: "TITULOS";
+    color: #413e3e;
 }
 
 P {
     font-family: "TEXTO";
+    color: #413e3e;
+}
+
+hr {
+    border: 0;
+    height: 85px; 
+    background-color: #d0d0e1; 
+    margin: 20px 0; 
 }
 
 header {
-    background-color: #9daece;
+    background-color: #d0d0e1;
     display: flex;
-    height: 130px;
+    height: 100px;
     align-items: center;
+    justify-content: space-between;
 }
+
+header img {
+    max-height: 100%; 
+    max-width: 100%;  
+    object-fit: contain;
+    transform: translateX(50%);
+}
+
+footer {
+    background-color: #d0d0e1;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    max-height: 100%; 
+    max-width: 100%;  
+    object-fit: contain;
+}
+
+
+.menu {
+    list-style-type: none;
+    display: flex; 
+    padding: 0; 
+    margin: 0; 
+     position: absolute;
+    left: 50%; 
+    transform: translateX(-40%);
+}
+
+.menu li {
+    margin-right: 20px; 
+}
+
+.menu a {
+    text-decoration: none; 
+    color: #413e3e;
+    background-color: #ededed;          
+    font-weight: bold;   
+    border: 1px solid #ededed;
+    padding: 5px; 
+    border-radius: 4px; 
+}
+
+.menu a:hover {
+    color: #d4afb9;      
+}
+
+.search-box {
+    padding: 5px; 
+    margin-left: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    transform: translateY(-20%);
+}
+
 
 body {
     background-color: #ededed;
@@ -34,6 +103,7 @@ body {
 
 .INICIO {
     text-align: center;
+    margin-top: 50px;
 }
 
 .MENSAJE {

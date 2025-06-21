@@ -197,3 +197,19 @@ hr {
     margin-top: 50px;
 }
 
+ul, ol, li {
+    font-family: "TEXTO";
+    color: #413e3e;
+}
+
+.descripcion-video {
+    text-align: center;
+    font-family: "TEXTO";
+    color: #413e3e;
+    margin-top: 10px;
+}
+
+
+
+
+

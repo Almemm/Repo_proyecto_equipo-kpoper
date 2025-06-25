@@ -86,7 +86,7 @@ footer img {
 }
 
 .menu a:hover {
-    color: #d4afb9;      
+    color: #d460ff;      
 }
 
 .search-box {
@@ -142,6 +142,52 @@ hr {
     margin-top: 50px;
 }
 
+.GENERACIONES h1 {
+    text-align: center;
+}
+
+.ESCENARIO {
+    display: flex;
+    transform: translateX(130px);
+}
+
+.ESCENARIO li {
+    transform: translateY(150px);
+}
+
+.sector a {
+   font-family: "TÍTULOS";
+   color: #413e3e;
+}
+
+.sector a:hover {
+    color: #d460ff;      
+}
+
+  .sector {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sector-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .color1 { background-color: #413e3e; }
+        .color2 { background-color: #d460ff; }
+        .color3 { background-color: #eac6cf; }
+        .color4 { background-color: #c4c4d5; }
+        .color5 { background-color: #67d8b685; }
+        .color6 { background-color: #eb8484; }
 
 .container {
     display: flex;
@@ -202,6 +248,17 @@ ul, ol, li {
     color: #413e3e;
 }
 
+.GENS {
+    display: block;
+    background-color: #ededed; 
+    padding: 20px; 
+    border: 3px solid #413e3e; 
+    border-radius: 20px; 
+    max-width: 1100px; 
+    margin: 20px auto; 
+    text-align: justify;
+}
+
 .descripcion-video {
     text-align: center;
     font-family: "TEXTO";
@@ -216,6 +273,57 @@ ul, ol, li {
 }
 
 
+.AUGE {
+    display: block;
+    background-color: #d460ff; 
+    padding: 20px; 
+    border: 3px solid #946aa5; 
+    border-radius: 20px; 
+    max-width: 1100px; 
+    margin: 20px auto; 
+    text-align: justify;
+}
 
+.SALIDA {
+    display: block;
+    background-color: #ffb1c1; 
+    padding: 20px; 
+    border: 3px solid #e667b1; 
+    border-radius: 20px; 
+    max-width: 1100px; 
+    margin: 20px auto; 
+    text-align: justify; 
+}
 
+.HALLYU {
+    display: block;
+    background-color: #c4c4d5; 
+    padding: 20px; 
+    border: 3px solid #9daece; 
+    border-radius: 20px; 
+    max-width: 1100px; 
+    margin: 20px auto; 
+    text-align: justify;  
+}
 
+.JAPÓN {
+    display: block;
+    background-color: #ddfaff; 
+    padding: 20px; 
+    border: 3px solid #94ecf1; 
+    border-radius: 20px; 
+    max-width: 1100px; 
+    margin: 20px auto; 
+    text-align: justify; 
+}
+
+.MENOS {
+    display: block;
+    background-color: #eb8484; 
+    padding: 20px; 
+    border: 3px solid #bd4b4b; 
+    border-radius: 20px; 
+    max-width: 1100px; 
+    margin: 20px auto; 
+    text-align: justify; 
+}

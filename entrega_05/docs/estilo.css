@@ -108,12 +108,6 @@ footer img {
     z-index: 1;
 }
 
-.PORTADA h1, p {
-    position: relative;
-    z-index: 2;
-    color: #ededed;
-}
-
 
 body {
     background-color: #ededed;
@@ -267,6 +261,7 @@ ul, ol, li {
 
 
 .container-carousel {
+    position: relative;
     width: 500px;
     height: 300px;
     background-color: #d460ff;
@@ -275,105 +270,6 @@ ul, ol, li {
     overflow: hidden;
 }
 
-.carruseles {
-    width: 300%;
-    height: 100%;
-    display: flex;
-    border: solid thin #bd4b4b;
-}
-
-.slider-section {
-    width: calc(100% /3);
-    height: 100%;
-}
-
-.slider-section img {
-    width: 500px;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.btn-left,
-.btn-right {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    font-size: 1.5rem;
-    background-color: transparent;
-    border-radius: 50%;
-    padding: 5px;
-    font-weight: 600;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.CARRUSEL {
-  width: 400px;
-  height: 400px; /* o el valor que te guste */
-  overflow: hidden;
-  position: relative;
-  margin: auto;
-}
-
-.imagenescarrusel {
-    display: flex;
-    width: 300%;
-    transition: transform 0.5s ease-in-out;
-
-}
-
-.imagenescarrusel img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
-.anterior , .siguiente {
-    position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  font-size: 24px;
-  padding: 8px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.anterior {
-    left: 10px;
-}
-
-.siguiente {
-    right: 10px;
-}
 
 .GENS {
     display: block;

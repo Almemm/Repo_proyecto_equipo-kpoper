@@ -102,16 +102,16 @@ footer img {
     background-image: url(imagenes/gif_portada.gif);
     background-size: cover;
     background-position: center;
-    color: ;
     padding: 40px;
     height: 700px;
     text-align: center;
     z-index: 1;
 }
 
-.PORTADA h1, PORTADA p {
+.PORTADA h1, p {
     position: relative;
     z-index: 2;
+    color: #ededed;
 }
 
 
@@ -264,6 +264,73 @@ ul, ol, li {
     font-family: "TEXTO";
     color: #413e3e;
 }
+
+
+.container-carousel {
+    width: 500px;
+    height: 300px;
+    background-color: #d460ff;
+    box-shadow: 0px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carruseles {
+    width: 300%;
+    height: 100%;
+    display: flex;
+    border: solid thin #bd4b4b;
+}
+
+.slider-section {
+    width: calc(100% /3);
+    height: 100%;
+}
+
+.slider-section img {
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .CARRUSEL {
   width: 400px;

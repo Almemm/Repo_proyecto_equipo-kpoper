@@ -340,6 +340,10 @@ ul, ol, li {
     text-align: justify; 
 }
 
+.vis3 {
+    max-width: 50%;
+}
+
 .MENOS {
     display: block;
     background-color: #eb8484; 

@@ -97,6 +97,23 @@ footer img {
     transform: translateY(-20%);
 }
 
+.PORTADA {
+    position: relative;
+    background-image: url(imagenes/gif_portada.gif);
+    background-size: cover;
+    background-position: center;
+    color: ;
+    padding: 40px;
+    height: 700px;
+    text-align: center;
+    z-index: 1;
+}
+
+.PORTADA h1, PORTADA p {
+    position: relative;
+    z-index: 2;
+}
+
 
 body {
     background-color: #ededed;
@@ -246,6 +263,49 @@ hr {
 ul, ol, li {
     font-family: "TEXTO";
     color: #413e3e;
+}
+
+.CARRUSEL {
+  width: 400px;
+  height: 400px; /* o el valor que te guste */
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.imagenescarrusel {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.imagenescarrusel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.anterior , .siguiente {
+    position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.anterior {
+    left: 10px;
+}
+
+.siguiente {
+    right: 10px;
 }
 
 .GENS {

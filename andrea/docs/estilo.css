@@ -379,7 +379,6 @@ ul, ol, li {
     text-align: justify;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-
 .CRONICA {
     font-family: sans-serif;
     padding: 20px;
@@ -391,7 +390,7 @@ ul, ol, li {
   }
   
   .bloque-intro, .bloque-final {
-    background-color: #d1d0e1;
+    background-color: #fff0f5;
     padding: 20px;
     margin: 15px auto;
     border-radius: 10px;
@@ -415,11 +414,11 @@ ul, ol, li {
   }
   
   .izquierda {
-    background-color: #ffb0c1;
+    background-color: #ffbfd0;
   }
   
   .derecha {
-    background-color:  #ffb0c1;
+    background-color: #ffcdd2;
   }
   
   .grafico {
@@ -429,6 +428,98 @@ ul, ol, li {
   }
   
   .bloque-final {
-    background-color: #d1d0e1;
+    background-color: #ffe4ec;
+  }
+  
+.CRONICA {
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  
+  .centrar {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .bloque-texto {
+    background-color: #ededed;
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 1200px;
+  }
+  
+  .bloque2 {
+    background-color: #d6a4e9;
+    padding: 25px;
+    margin: 15px auto;
+    border-radius: 12px;
+    max-width: 1200px;
+  }
+  
+  /* Layout visual */
+  .layout-doble {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .layout-doble .texto {
+    flex: 1 1 40%;
+  }
+  
+  .layout-doble .visualizaciones {
+    flex: 1 1 58%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .mapa {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Acordeón */
+  .acordeon {
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ff6f61;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  
+  .acordeon-titulo {
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
+    padding: 15px 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .acordeon-titulo::after {
+    content: "▼";
+    float: right;
+    transition: transform 0.3s;
+  }
+  
+  .acordeon-titulo.activo::after {
+    transform: rotate(180deg);
+  }
+  
+  .acordeon-contenido {
+    padding: 15px 20px;
+    display: none;
+    background-color: #ffd3cf;
+    color: #333;
+    font-size: 15px;
   }
   

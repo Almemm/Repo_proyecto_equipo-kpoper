@@ -340,9 +340,9 @@ ul, ol, li {
     text-align: justify; 
 }
 
-.vis3 {
-    max-width: 50%;
-}
+
+
+
 
 .MENOS {
     display: block;
@@ -353,105 +353,4 @@ ul, ol, li {
     max-width: 1100px; 
     margin: 20px auto; 
     text-align: justify; 
-}
-
-
-.hr-celeste {
-    background-color: #7dc4ce; 
-}
-
-.PRECIOS {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.cronica {
-    background-color: #ffffff;
-    border: 2px solid #9daece;
-    border-radius: 15px;
-    padding: 20px;
-    max-width: 700px;
-    margin: 0 auto 40px auto;
-    text-align: justify;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.cronica p {
-    font-family: "TEXTO";
-    color: #413e3e;
-    margin-bottom: 12px;
-}
-
-.bloque-imagen {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0 40px 0;
-}
-
-.imagen-precios {
-    max-width: 700px;
-    width: 100%;
-    border-radius: 15px;
-    border: 2px solid #9daece;
-}
-
-.precio-promedio {
-    max-width: 700px;
-    width: 100%;
-    border-radius: 15px;
-    border: 2px solid #9daece;
-
-}.rango-precios {
-    max-width: 700px;
-    width: 100%;
-    border-radius: 15px;
-    border: 2px solid #9daece;
-}
-
-
-.mapacalor-eb {
-    max-width: 700px;
-    width: 100%;
-    border-radius: 15px;
-    border: 2px solid #9daece;
-}.mapacalor-ec {
-    max-width: 700px;
-    width: 100%;
-    border-radius: 15px;
-    border: 2px solid #9daece;
-}
-
-.visualitation {
-    max-width: 700px;
-    width: 100%;
-    border-radius: 15px;
-    border: 2px solid #9daece;
-}
-
-.contenedor {
-    text-align: center;
-}
-
-.Texto {
-    width: 94%;
-    margin: 40px auto;
-    padding: 20px;
-    text-align: justify;
-    background-color: #ededed;
-    border-radius: 10%; 
-}
-
-.juntar {
-    width: 660px;
-    text-align: center;
-    margin-right: 10px;
-    display: inline-block;
-}
-
-.centrar {
-    text-align: center;
-}
-
-.centrar2 {
-    text-align: center;
 }

@@ -6,6 +6,10 @@
         <title>K-ERA</title>
         <link rel="icon" href="imagenes/LOGO.png" type="image/png">
         <link rel="stylesheet" href= "estilo.css">
+        <!-- Vega.js y Vega-Lite para visualización #vis2 -->
+          <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
           </head>
 
@@ -22,7 +26,7 @@
                 <img src="imagenes/banner.gif">
                 
             </section>
-    
+            
         
     
             <section class="CONTEXTO">
@@ -92,22 +96,35 @@
                   <div class="layout-doble">
                     <div class="texto">
                       <h3>Precios en distintos mercados</h3>
+                      <br>
+                      
                       <p>El sudeste asiático (Tailandia, Singapur, filipinas, indonesia, malasia), japón y corea del sur destacan por ofrecer precios generalmente más bajos. Entre 2014 y 2019 se registraron precios mínimos entre 30 y 90 dólares.</p>
-         
+                      
                       <p>Desde 2022 incluso en estos mercados “accesibles” el precio de la entrada más barata ha mostrado un incremento, y en años más recientes se alcanzaron los 250 dólares. </p>
-     
+                      
                       <p>Estados Unidos no se queda atrás, con precios que han aumentado considerablemente aunque no es donde se han registrado los precios más altos.</p>
-     
+                      
                       <p>Por otro lado, algunos países como Brasil, Estados Unidos y Europa tienen precios relativamente altos, especialmente en entradas vip y que permiten estar más cerca del escenario. Por ejemplo, en 2025, las entradas para el DominATE Tour en Brasil de Stray Kids alcanzó los 457 dólares.</p>
-                     
+                      
                       <p>Parte del aumento en EE.UU. se debe a la política de dynamic pricing (precio dinámico) que Ticketmaster introdujo en 2022. esta práctica eleva los precios en momentos de alta demanda, similar a lo que ocurre en hora punta con Uber. La empresa alega que esta práctica tiene por objetivo frenar a los revendedores. Sin embargo, algunas entradas han alcanzado los 565 dólares.</p>
-                     
+                      
                       <p>En Europa, esta situación no es muy distinta porque las entradas pueden partir desde los 43 dólares y llegar hasta los 743 dólares.</p>
                     </div>
               
                     <div class="visualizaciones">
-                      <img src="MAPA_CALOR_BARATA.png" alt="MAPACALOR-EB" class="mapa">
-                      <img src="MAPA_CALOR_CARA.png" alt="MAPACALOR-EC" class="mapa">
+                     
+
+                      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <!--Aqui quiero que se vea el grafico-->
+                      <!-- Contenedor del gráfico interactivo -->
+                     
+                      <!-- Nuevo contenedor para el segundo gráfico (más barato) -->
+                      <div id="bc122c96-5a85-4d73-8155-4a4b0e318ad3" style="width: 95%; height: 350px;"></div>
+                      <div id="vis1" style="width: 95%; height: 350px;"></div>
+                      
+                    
+                      <script src="js/application.js"></script>
+
+                    
                     </div>
                   </div>
               
@@ -143,7 +160,8 @@
               
                 <!-- Visualización abajo del texto, antes del acordeón -->
                 <div class="visualizaciones">
-                  <img src="vis-dani.png" alt="VIS-DANI" class="mapa">
+          
+                  <div id="vis2"></div>
                 </div>
               
                 <!-- Recuadro rojo desplegable -->
@@ -160,14 +178,27 @@
               
 
 <hr class="hr-celeste"> <div class="franja-celeste"></div>
-    <script>
-        document.querySelectorAll('.acordeon-titulo').forEach(button => {
-          button.addEventListener('click', () => {
-            button.classList.toggle('activo');
-            const contenido = button.nextElementSibling;
-            contenido.style.display = contenido.style.display === 'block' ? 'none' : 'block';
+        <!-- Vega para el gráfico con evolución por grupo y año -->
+        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+        <!-- Plotly -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+        <!-- Tu archivo JS con los tres gráficos -->
+        <script src="js/application.js"></script>
+
+        <!-- Script del acordeón -->
+        <script>
+          document.querySelectorAll('.acordeon-titulo').forEach(button => {
+            button.addEventListener('click', () => {
+              button.classList.toggle('activo');
+              const contenido = button.nextElementSibling;
+              contenido.style.display = contenido.style.display === 'block' ? 'none' : 'block';
+            });
           });
-        });
-      </script>
+        </script>
+
       
 </body>

@@ -27,7 +27,86 @@ window.PLOTLYENV=window.PLOTLYENV || {};                                    if (
   })(vegaEmbed);
   
 
- 
+  document.addEventListener("DOMContentLoaded", function () {
+    const spec = {
+      config: {
+        view: { continuousWidth: 700, continuousHeight: 400 }
+      },
+      layer: [
+        {
+          mark: { type: "line", point: true },
+          encoding: {
+            color: {
+              field: "Tipo de entrada",
+              scale: { range: ["green", "purple"] },
+              type: "nominal"
+            },
+            tooltip: [
+              { field: "año", type: "temporal" },
+              { field: "Tipo de entrada", type: "nominal" },
+              { field: "Precio", type: "quantitative" }
+            ],
+            x: { field: "año", title: "Año", type: "temporal" },
+            y: { field: "Precio", title: "Precio (USD)", type: "quantitative" }
+          },
+          title: "Evolución de precios de entradas (mín y máx)"
+        },
+        {
+          mark: { type: "text", align: "left", dx: 5, dy: -5 },
+          encoding: {
+            color: { field: "Tipo de entrada", type: "nominal" },
+            text: { field: "Precio", format: "$.2f", type: "quantitative" },
+            x: { field: "año", type: "temporal" },
+            y: { field: "Precio", type: "quantitative" }
+          }
+        }
+      ],
+      data: {
+        name: "data",
+        values: [
+          { "año": "2010", "Tipo de entrada": "Mín. de ENTRADA MÁS BARATA", "Precio": 40 },
+          { "año": "2011", "Tipo de entrada": "Mín. de ENTRADA MÁS BARATA", "Precio": 40 },
+          { "año": "2012", "Tipo de entrada": "Mín. de ENTRADA MÁS BARATA", "Precio": 75 },
+          { "año": "2013", "Tipo de entrada": "Mín. de ENTRADA MÁS BARATA", "Precio": 142 },
+          { "año": "2014", "Tipo de entrada": "Mín. de ENTRADA MÁS BARATA", "Precio": 18 },
+          { "año": "2015", "Tipo de entrada": "Mín. de ENTRADA MÁS BARATA", "Precio": 17.84 },
+          { "año": "2016", "Tipo de entrada": "Mín. de ENTRADA MÁS BARATA", "Precio": 17.66 },
+          { "año": "2017", "Tipo de entrada": "Mín. de ENTRADA MÁS BARATA", "Precio": 10.33 },
+          { "año": "2018", "Tipo de entrada": "Mín. de ENTRADA MÁS BARATA", "Precio": 22.32 },
+          { "año": "2019", "Tipo de entrada": "Mín. de ENTRADA MÁS BARATA", "Precio": 26.53 },
+          { "año": "2020", "Tipo de entrada": "Mín. de ENTRADA MÁS BARATA", "Precio": 30 },
+          { "año": "2021", "Tipo de entrada": "Mín. de ENTRADA MÁS BARATA", "Precio": 60 },
+          { "año": "2022", "Tipo de entrada": "Mín. de ENTRADA MÁS BARATA", "Precio": 32.73 },
+          { "año": "2023", "Tipo de entrada": "Mín. de ENTRADA MÁS BARATA", "Precio": 30.96 },
+          { "año": "2024", "Tipo de entrada": "Mín. de ENTRADA MÁS BARATA", "Precio": 25.49 },
+          { "año": "2025", "Tipo de entrada": "Mín. de ENTRADA MÁS BARATA", "Precio": 29 },
+  
+          { "año": "2010", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 180 },
+          { "año": "2011", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 180 },
+          { "año": "2012", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 107 },
+          { "año": "2013", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 230 },
+          { "año": "2014", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 250 },
+          { "año": "2015", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 205 },
+          { "año": "2016", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 255.17 },
+          { "año": "2017", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 297.74 },
+          { "año": "2018", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 390 },
+          { "año": "2019", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 505.18 },
+          { "año": "2020", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 425 },
+          { "año": "2021", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 450 },
+          { "año": "2022", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 565.82 },
+          { "año": "2023", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 3000 },
+          { "año": "2024", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 592 },
+          { "año": "2025", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 743.13 }
+        ]
+      },
+      height: 300,
+      width: 850,
+      $schema: "https://vega.github.io/schema/vega-lite/v5.json"
+    };
+  
+    vegaEmbed("#vega-visualization-dca581d3aedf4305a3efe216c14a27f5", spec).catch(console.error);
+  });
+  
 
 
  

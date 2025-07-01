@@ -6,7 +6,7 @@
         <title>K-ERA</title>
         <link rel="icon" href="imagenes/LOGO.png" type="image/png">
         <link rel="stylesheet" href= "estilo.css">
-        <!-- Vega.js y Vega-Lite para visualización #vis2 -->
+        
        
 
           </head>
@@ -80,13 +80,13 @@
                   
                               
 
-                  <!-- practica -->
+               
                   <div class="CRONICA">
                       <div class="centrar">
                         <h2><b><em>¿CUÁNTO CUESTA VER A UN GRUPO DE K-POP?</em></b></h2>
                       </div>
                     
-                      <!-- Parte fuera del recuadro morado -->
+               
                       <section class="bloque-texto">
                           <p> ¿HAY RUMORES DE UN POSIBLE CONCIERTO EN CHILE DE TU GRUPO FAVORITO? EN CASO QUE NO TENGAN UNA PARADA ¿TU PLAN B ES VIAJAR A OTRO PAÍS? ¿VALE LA PENA CRUZAR FRONTERAS? AQUÍ ENCONTRARAS UN ANÁLISIS SOBRE LOS MERCADOS QUE MÁS COMBIENEN AL BOLSILLO.</p>
                           <br>
@@ -94,8 +94,7 @@
                           <p>Cuando se trata de asistir a un concierto de k-pop se requiere de logística, un buen presupuesto y un sinfín decisiones. en años donde los grupos se embarcan en world tours, los fanáticos de latinoamerica esperan con ansiedad ver a su país incluido en la lista. pero cuando esto no ocurre, ¿es realmente caro ver a tu grupo favorito en otro país?</p>
                           <p>A través de un análisis de precios de entradas a concierto de k-pop desde 2009 hasta 2025 revela que los precios varían entre mercados. Aquí va un desglose de los resultados</p>
                       </section>
-                  
-                      <!-- Parte con recuadro morado -->
+                
                       <section class="bloque2">
                         <div class="layout-doble">
                           <div class="texto">
@@ -118,10 +117,8 @@
                           <div class="visualizaciones">
                           
 
-                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <!--Aqui quiero que se vea el grafico-->
-                            <!-- Contenedor del gráfico interactivo -->
-                          
-                            <!-- Nuevo contenedor para el segundo gráfico (más barato) -->
+                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+                           
                             <div id="bc122c96-5a85-4d73-8155-4a4b0e318ad3" style="width: 95%; height: 350px;"></div>
                             <div id="vis1" style="width: 95%; height: 350px;"></div>
                             
@@ -162,13 +159,13 @@
                           </p>
                       </div>
                     
-                      <!-- Visualización abajo del texto, antes del acordeón -->
+                    
                       <div class="visualizaciones">
                 
                         <div id="vis2"></div>
                       </div>
                     
-                      <!-- Recuadro rojo desplegable -->
+                      
                       <div class="acordeon">
                         <button class="acordeon-titulo">Información del grafico</button>
                         <div class="acordeon-contenido">
@@ -180,18 +177,18 @@
                     
   
 <hr class="hr-celeste"> <div class="franja-celeste"></div>
-<!-- Vega para el gráfico con evolución por grupo y año -->
+
         <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
         <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
         <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
-        <!-- Plotly -->
+       
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-        <!-- Tu archivo JS con los tres gráficos -->
+   
         <script src="js/application.js"></script>
 
-        <!-- Script del acordeón -->
+    
         <script>
           document.querySelectorAll('.acordeon-titulo').forEach(button => {
             button.addEventListener('click', () => {
@@ -202,5 +199,5 @@
           });
         </script>
 
-      
+  <!--final de los precios-->        
 </body>

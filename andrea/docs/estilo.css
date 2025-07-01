@@ -267,26 +267,6 @@ ul, ol, li {
 }
 
 
-.bloque {
-    background-color: #ffb0c1;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 10px;
-}
-
-.bloque2 {
-    background-color: #d6a4e9;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 10px;
-}
-
-.bloque3 {
-    background-color: #ffe281;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 10px;
-}
 
 .cronica p {
     font-family: "TEXTO";
@@ -461,7 +441,7 @@ ul, ol, li {
     max-width: 1200px;
   }
   
-  /* Layout visual */
+  
   .layout-doble {
     display: flex;
     flex-wrap: wrap;
@@ -488,7 +468,7 @@ ul, ol, li {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   }
   
-  /* Acordeón */
+ 
   .acordeon {
     margin-top: 30px;
     border-radius: 10px;
@@ -527,9 +507,7 @@ ul, ol, li {
     color: #413e3e;
     font-size: 15px;
   }
- /*cuadro amarillo*/
 
- /* --- Bloque amarillo --- */
 .bloque3 {
     background-color: #ffe281;
     padding: 25px;
@@ -538,7 +516,7 @@ ul, ol, li {
     max-width: 1200px;
   }
   
-  /* Layout en columna */
+
   .bloque3 .layout-doble {
     display: flex;
     flex-direction: column;
@@ -577,7 +555,7 @@ ul, ol, li {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   }
   
-  /* Acordeón */
+
   .bloque3 .acordeon {
     margin-top: 10px;
     border-radius: 10px;
@@ -617,36 +595,8 @@ ul, ol, li {
     font-size: 15px;
   }
   
-  /* Responsive */
-  @media (max-width: 768px) {
-    .bloque3 .mapa {
-      width: 100%;
-    }
+
   
-    .bloque3 .acordeon-titulo {
-      font-size: 15px;
-    }
-  
-    .bloque3 .acordeon-contenido {
-      font-size: 14px;
-    }
-  }
-  
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .bloque3 .mapa {
-      width: 100%;
-    }
-  
-    .bloque3 .acordeon-titulo {
-      font-size: 15px;
-    }
-  
-    .bloque3 .acordeon-contenido {
-      font-size: 14px;
-    }
-  }
   #btn {
     position: fixed;
     top: 10px;

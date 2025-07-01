@@ -26,7 +26,6 @@ window.PLOTLYENV=window.PLOTLYENV || {};                                    if (
       .catch(error => showError(el, error));
   })(vegaEmbed);
   
-
   document.addEventListener("DOMContentLoaded", function () {
     const spec = {
       config: {
@@ -99,39 +98,154 @@ window.PLOTLYENV=window.PLOTLYENV || {};                                    if (
           { "año": "2025", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 743.13 }
         ]
       },
-      height: 300,
-      width: 850,
+      height: 250,
+      width: 900,
       $schema: "https://vega.github.io/schema/vega-lite/v5.json"
     };
   
     vegaEmbed("#vega-visualization-dca581d3aedf4305a3efe216c14a27f5", spec).catch(console.error);
   });
   
+  (function(vegaEmbed) {
+    const spec = {
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+      "data": {
+        "name": "data-mercados"
+      },
+      "width": 700,
+      "height": 400,
+      "title": {
+        "text": "Precios de entradas por mercado",
+        "fontSize": 18,
+        "subtitle": "Verde: Entrada más barata · Morado: Entrada más cara"
+      },
+      "layer": [
+        {
+          "mark": {"type": "line", "point": {"filled": true}},
+          "encoding": {
+            "x": {
+              "field": "MERCADO",
+              "type": "nominal",
+              "sort": ["Sudeste Asiático", "Europa ", "Oceanía", "China", "América Latina", "Estados Unidos ", "América del Norte", "Corea del Sur", "Asia", "Sudeste asiático", "Japón", "Oceanía ", "Estados Unidos", "Japón ", "México", "Europa", "Brasil"],
+              "title": ""
+            },
+            "y": {
+              "field": "PRECIO",
+              "type": "quantitative",
+              "title": "Precio en USD"
+            },
+            "color": {
+              "field": "TIPO_ENTRADA",
+              "type": "nominal",
+              "scale": {
+                "domain": ["Entrada más barata (verde)", "Entrada más cara (morado)"],
+                "range": ["green", "purple"]
+              },
+              "title": "Tipo de entrada"
+            },
+            "tooltip": [
+              {"field": "MERCADO", "type": "ordinal"},
+              {"field": "TIPO_ENTRADA", "type": "nominal"},
+              {"field": "PRECIO", "type": "quantitative"}
+            ]
+          }
+        },
+        {
+          "mark": {"type": "text", "align": "center", "baseline": "bottom", "dy": -10},
+          "encoding": {
+            "x": {"field": "MERCADO", "type": "nominal"},
+            "y": {"field": "PRECIO", "type": "quantitative"},
+            "text": {"field": "PRECIO", "type": "quantitative", "format": "$,.0f"},
+            "color": {
+              "field": "TIPO_ENTRADA",
+              "type": "nominal",
+              "legend": null,
+              "scale": {
+                "domain": ["Entrada más barata (verde)", "Entrada más cara (morado)"],
+                "range": ["green", "purple"]
+              }
+            }
+          }
+        }
+      ],
+      "datasets": {
+        "data-mercados": [
+          {"MERCADO":"América Latina","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":17.84},
+          {"MERCADO":"América del Norte","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":57.81},
+          {"MERCADO":"Asia","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":142.0},
+          {"MERCADO":"Brasil","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":10.33},
+          {"MERCADO":"China","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":24.66},
+          {"MERCADO":"Corea del Sur","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":40.0},
+          {"MERCADO":"Estados Unidos","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":40.0},
+          {"MERCADO":"Estados Unidos ","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":50.0},
+          {"MERCADO":"Europa","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":55.0},
+          {"MERCADO":"Europa ","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":72.0},
+          {"MERCADO":"Japón","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":40.0},
+          {"MERCADO":"Japón ","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":50.0},
+          {"MERCADO":"México","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":76.11},
+          {"MERCADO":"Oceanía","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":87.12},
+          {"MERCADO":"Oceanía ","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":52.33},
+          {"MERCADO":"Sudeste Asiático","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":17.66},
+          {"MERCADO":"Sudeste asiático","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":42.0},
+          {"MERCADO":"América Latina","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":250.0},
+          {"MERCADO":"América del Norte","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":234.83},
+          {"MERCADO":"Asia","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":230.0},
+          {"MERCADO":"Brasil","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":111.93},
+          {"MERCADO":"China","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":297.74},
+          {"MERCADO":"Corea del Sur","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":230.0},
+          {"MERCADO":"Estados Unidos","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":215.0},
+          {"MERCADO":"Estados Unidos ","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":250.0},
+          {"MERCADO":"Europa","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":120.0},
+          {"MERCADO":"Europa ","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":335.98},
+          {"MERCADO":"Japón","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":230.0},
+          {"MERCADO":"Japón ","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":160.52},
+          {"MERCADO":"México","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":142.07},
+          {"MERCADO":"Oceanía","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":335.94},
+          {"MERCADO":"Oceanía ","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":220.06},
+          {"MERCADO":"Sudeste Asiático","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":390.0},
+          {"MERCADO":"Sudeste asiático","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":230.0}
+        ]
+      }
+      
+    
+    };
+  
+    const embedOpt = {mode: "vega-lite"};
+  const el = document.getElementById("vis-grafico-mercados");
 
-
- 
-
-  btn.addEventListener("click", (e) => {
-    const interval = setInterval(createMoney, 300);
-    setTimeout(() => {
-      clearInterval(interval);
-    }, 5000);
-  });
-  
-  function createMoney() {
-    const money = document.createElement("div");
-    money.innerText = "💸";
-    money.classList.add("heart");
-  
-    money.style.left = `${Math.random() * 100}vw`;
-    money.style.animationDuration = `${Math.random() * 2 + 2}s`;
-  
-    document.body.appendChild(money);
-  
-    setTimeout(() => {
-      money.remove();
-    }, 5000);
+  function showError(el, error) {
+    el.innerHTML = `<div style="color:red;">
+      <p>JavaScript Error: ${error.message}</p>
+    </div>`;
+    throw error;
   }
-  
- 
 
+  vegaEmbed("#vis-grafico-mercados", spec, embedOpt).catch(error => showError(el, error));
+})(vegaEmbed);
+  
+  
+  
+  
+
+    btn.addEventListener("click", (e) => {
+        const interval = setInterval(createMoney, 300);
+        setTimeout(() => {
+          clearInterval(interval);
+        }, 5000);
+      });
+      
+      function createMoney() {
+        const money = document.createElement("div");
+        money.innerText = "💸";
+        money.classList.add("heart");
+      
+        money.style.left = `${Math.random() * 100}vw`;
+        money.style.animationDuration = `${Math.random() * 2 + 2}s`;
+      
+        document.body.appendChild(money);
+      
+        setTimeout(() => {
+          money.remove();
+        }, 5000);
+      }
+  

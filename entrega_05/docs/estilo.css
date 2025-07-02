@@ -473,6 +473,18 @@ ul, ol, li {
     text-align: justify;  
 }
 
+.gif-container {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;              
+  flex-wrap: wrap;         
+}
+
+.gif-gangnam,
+.gif-bts {
+  width: 500px;  
+}
+
 .JAPÓN {
     display: flexbox;
     background-color: #ededed; 

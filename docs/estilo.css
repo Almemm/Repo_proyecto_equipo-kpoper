@@ -23,7 +23,7 @@ P, li, ul {
     color: #413e3e;
 }
 
-a {
+.INICIO, .HISTORIA a {
     color: #ededed;
 }
 
@@ -48,10 +48,13 @@ header img {
 
 footer {
     background-color: #d0d0e1;
-    display: flex;
     height: 100px;
+    width: 100%;
     align-items: center;
     justify-content: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
 }
 
 footer img {
@@ -155,6 +158,46 @@ hr {
 
 .GENERACIONES h1 {
     text-align: center;
+}
+
+.AUGE a {
+    color: #672e78;
+}
+
+.AUGE a:hover {
+    color: #d4afb9;      
+}
+
+.SALIDA a {
+    color: #672e78;
+}
+
+.SALIDA a:hover {
+    color: #d4afb9;      
+}
+
+.HALLYU a {
+    color: #672e78;
+}
+
+.HALLYU a:hover {
+    color: #d4afb9;      
+}
+
+.JAPÓN a {
+    color: #672e78;
+}
+
+.JAPÓN a:hover {
+    color: #d4afb9;      
+}
+
+.MENOS a {
+    color: #672e78;
+}
+
+.MENOS a:hover {
+    color: #d4afb9;      
 }
 
 .ESCENARIO {

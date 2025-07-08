@@ -65,7 +65,6 @@
 
 
 .imagen-precios {
-    max-width: 700px;
     width: 100%;
     border-radius: 15px;
     border: 2px solid #9daece;
@@ -318,7 +317,7 @@
     padding: 25px;
     margin: 15px auto;
     border-radius: 12px;
-    max-width: 1200px;
+    max-width: 1200px;;
   }
   
   .bloque3 .texto {

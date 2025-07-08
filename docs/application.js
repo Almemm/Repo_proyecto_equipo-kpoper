@@ -21,8 +21,8 @@ window.PLOTLYENV=window.PLOTLYENV || {};                                    if (
                         + '</div>');
         throw error;
     }
-    const el = document.getElementById('vis2');
-    vegaEmbed("#vis2", spec, embedOpt)
+    const el = document.getElementById('vis_precios');
+    vegaEmbed("#vis_precios", spec, embedOpt)
       .catch(error => showError(el, error));
   })(vegaEmbed);
   

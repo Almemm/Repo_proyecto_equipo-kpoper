@@ -11,6 +11,7 @@
     text-align: center;
     margin-top: 0px;
     padding: 0; 
+    z-index: 0;
     }
 
 .PRECIOS h1 {
@@ -380,9 +381,9 @@
 
   
   #btn {
-    position: fixed;
-    top: 10px;
-    right: 10px;
+    position: relative;
+    top: -10px;
+    left: 10px;
     border-style: none;
     padding: 0.5rem;
     border-radius: 5px;
@@ -390,7 +391,13 @@
     color: #fff;
     font-size: 0.8rem;
     cursor: pointer;
+    z-index: 0;
   }
+
+  .visible {
+  opacity: 1;
+  pointer-events: auto;
+}
   
   #btn:active {
     transform: translateY(2px);

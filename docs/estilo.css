@@ -50,8 +50,9 @@ footer {
     background-color: #d0d0e1;
     height: 100px;
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     padding: 20px 0;
     position: relative;
     bottom: 0;
@@ -114,6 +115,7 @@ footer img {
 
 body {
     background-color: #ededed;
+    overflow-x: hidden;
 }
 
 hr {
@@ -552,4 +554,5 @@ ul, ol, li {
     max-width: 1100px; 
     margin: 20px auto; 
     text-align: justify; 
+    z-index: 10;
 }

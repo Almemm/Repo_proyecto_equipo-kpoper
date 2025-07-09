@@ -40,10 +40,11 @@ window.PLOTLYENV=window.PLOTLYENV || {};                                    if (
               type: "nominal",
               scale: {
                 domain: [
-                  "Mín. de ENTRADA MÁS BARATA",
-                  "Máx. de ENTRADA MÁS CARA"
+                  
+                  "Máx. de ENTRADA MÁS CARA",
+                  "Mín. de ENTRADA MÁS BARATA"
                 ],
-                range: ["#d6a4e9", "#a194f5"]
+                range: ["#50b5d0", "#ffc14C"]
               }
             },
             tooltip: [
@@ -56,25 +57,20 @@ window.PLOTLYENV=window.PLOTLYENV || {};                                    if (
           },
           title: "Evolución de precios de entradas (mín y máx)"
         },
+
         {
-          mark: { type: "text", align: "left", dx: 5, dy: -5 },
+          mark: { type: "text", align: "left", dx: 5, dy: -5, fontSize: 9 },  // <- aquí defines el tamaño
           encoding: {
             color: {
-              field: "Tipo de entrada",
-              type: "nominal",
-              scale: {
-                domain: [
-                  "Mín. de ENTRADA MÁS BARATA",
-                  "Máx. de ENTRADA MÁS CARA"
-                ],
-                range: ["#d6a4e9", "#a194f5"]
-              }
+              value: "black"
             },
             text: { field: "Precio", format: "$.2f", type: "quantitative" },
             x: { field: "año", type: "temporal" },
             y: { field: "Precio", type: "quantitative" }
           }
         }
+        
+      
       ],
       data: {
         name: "data",
@@ -140,9 +136,8 @@ window.PLOTLYENV=window.PLOTLYENV || {};                                    if (
         "name": "data-mercados"
       },
       "layer": [
-        // Capa 1: barras de rango con tooltip directamente
         {
-          "mark": {"type": "bar", "height": 14, "cornerRadius": 5},
+          "mark": { "type": "bar", "height": 14, "cornerRadius": 5 },
           "encoding": {
             "y": {
               "field": "MERCADO",
@@ -153,10 +148,10 @@ window.PLOTLYENV=window.PLOTLYENV || {};                                    if (
             "x": {
               "field": "MIN",
               "type": "quantitative",
-              "title": "Precio en USD",
+              "title": "Precio más barato (USD)",
               "scale": { "domain": [0, 1000] }
             },
-            "x2": {"field": "MAX"},
+            "x2": { "field": "MAX" },
             "color": {
               "field": "COLOR",
               "type": "nominal",
@@ -170,42 +165,40 @@ window.PLOTLYENV=window.PLOTLYENV || {};                                    if (
               "legend": null
             },
             "tooltip": [
-              {"field": "MERCADO", "type": "nominal", "title": "Región"},
-              {"field": "MIN", "type": "quantitative", "title": "Precio más barato"},
-              {"field": "MAX", "type": "quantitative", "title": "Precio más caro"}
+              { "field": "MERCADO", "type": "nominal", "title": "Región" },
+              { "field": "MIN", "type": "quantitative", "title": "Precio más barato", "format": ".2f" },
+              { "field": "MAX", "type": "quantitative", "title": "Precio más caro", "format": ".2f" }
             ]
           }
         },
-        // Capa 2: etiquetas MIN a la derecha (nunca se pierden)
         {
-          "mark": {"type": "text", "align": "left", "dx": 5},
+          "mark": { "type": "text", "align": "left", "dx": 5 },
           "encoding": {
-            "y": {"field": "MERCADO", "type": "nominal", "sort": "-x"},
-            "x": {"field": "MIN", "type": "quantitative"},
-            "text": {"field": "MIN", "type": "quantitative"}
+            "y": { "field": "MERCADO", "type": "nominal", "sort": "-x" },
+            "x": { "field": "MIN", "type": "quantitative" },
+            "text": { "field": "MIN", "type": "quantitative", "format": ".2f" }
           }
         },
-        // Capa 3: etiquetas MAX
         {
-          "mark": {"type": "text", "align": "left", "dx": 5},
+          "mark": { "type": "text", "align": "left", "dx": 5 },
           "encoding": {
-            "y": {"field": "MERCADO", "type": "nominal", "sort": "-x"},
-            "x": {"field": "MAX", "type": "quantitative"},
-            "text": {"field": "MAX", "type": "quantitative"}
+            "y": { "field": "MERCADO", "type": "nominal", "sort": "-x" },
+            "x": { "field": "MAX", "type": "quantitative" },
+            "text": { "field": "MAX", "type": "quantitative", "format": ".2f" }
           }
         }
       ],
       "datasets": {
         "data-mercados": [
-          { "MERCADO": "América Del Norte", "MIN": 50, "MAX": 235, "COLOR": "1" },
-          { "MERCADO": "América Latina", "MIN": 18, "MAX": 330, "COLOR": "2" },
-          { "MERCADO": "Brasil", "MIN": 0, "MAX": 457, "COLOR": "3" },
-          { "MERCADO": "China", "MIN": 25, "MAX": 348, "COLOR": "4" },
-          { "MERCADO": "Corea Del Sur", "MIN": 0, "MAX": 230, "COLOR": "5" },
-          { "MERCADO": "Estados Unidos", "MIN": 29, "MAX": 405, "COLOR": "6" },
-          { "MERCADO": "Europa", "MIN": 43, "MAX": 743, "COLOR": "7" },
-          { "MERCADO": "Japón", "MIN": 40, "MAX": 400, "COLOR": "8" },
-          { "MERCADO": "México", "MIN": 25, "MAX": 311, "COLOR": "9" }
+          { "MERCADO": "América Del Norte", "MIN": 50.00, "MAX": 235.00, "COLOR": "1" },
+          { "MERCADO": "América Latina", "MIN": 18.00, "MAX": 330.00, "COLOR": "2" },
+          { "MERCADO": "Brasil", "MIN": 0.00, "MAX": 457.00, "COLOR": "3" },
+          { "MERCADO": "China", "MIN": 25.00, "MAX": 348.00, "COLOR": "4" },
+          { "MERCADO": "Corea Del Sur", "MIN": 0.00, "MAX": 230.00, "COLOR": "5" },
+          { "MERCADO": "Estados Unidos", "MIN": 29.00, "MAX": 405.00, "COLOR": "6" },
+          { "MERCADO": "Europa", "MIN": 43.00, "MAX": 743.00, "COLOR": "7" },
+          { "MERCADO": "Japón", "MIN": 40.00, "MAX": 400.00, "COLOR": "8" },
+          { "MERCADO": "México", "MIN": 25.00, "MAX": 311.00, "COLOR": "9" }
         ]
       }
     };
@@ -222,6 +215,7 @@ window.PLOTLYENV=window.PLOTLYENV || {};                                    if (
   
     vegaEmbed("#vis-grafico-mercados", spec, embedOpt).catch(error => showError(el, error));
   })(vegaEmbed);
+  
   
   
   

@@ -564,3 +564,20 @@ ul, ol, li {
     text-align: justify; 
     z-index: 10;
 }
+
+
+
+.cuadro-flotante {
+  position: fixed;
+  top: 20px; 
+  right: 20px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px;
+  padding: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}

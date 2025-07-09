@@ -64,3 +64,46 @@
 
 
 
+
+
+
+
+const secciones = document.querySelectorAll('.INICIO, .GENERACIONES');
+const cuadro1 = document.getElementById('cuadro1');
+const cuadro2 = document.getElementById('cuadro2');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            
+            if (entry.target.id === 'inicio') {
+                cuadro1.style.opacity = '1';
+                cuadro1.style.transform = 'translateY(0)';
+                cuadro2.style.opacity = '0';
+            } else if (entry.target.id === 'generaciones') {
+                cuadro2.style.opacity = '1';
+                cuadro2.style.transform = 'translateY(0)';
+                cuadro1.style.opacity = '0';
+            }
+        } else {
+            
+            if (entry.target.id === 'inicio') {
+                cuadro1.style.opacity = '0';
+                cuadro1.style.transform = 'translateY(20px)';
+            } else if (entry.target.id === 'generaciones') {
+                cuadro2.style.opacity = '0';
+                cuadro2.style.transform = 'translateY(20px)';
+            }
+        }
+    });
+}, {
+    threshold: 0.3
+});
+
+
+secciones.forEach(seccion => {
+    observer.observe(seccion);
+});
+
+
+

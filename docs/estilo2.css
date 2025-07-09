@@ -11,6 +11,7 @@
     text-align: center;
     margin-top: 0px;
     padding: 0; 
+    z-index: 0;
     }
 
 .PRECIOS h1 {
@@ -65,7 +66,6 @@
 
 
 .imagen-precios {
-    max-width: 700px;
     width: 100%;
     border-radius: 15px;
     border: 2px solid #9daece;
@@ -318,7 +318,7 @@
     padding: 25px;
     margin: 15px auto;
     border-radius: 12px;
-    max-width: 1200px;
+    max-width: 1200px;;
   }
   
   .bloque3 .texto {
@@ -381,9 +381,9 @@
 
   
   #btn {
-    position: fixed;
-    top: 10px;
-    right: 10px;
+    position: relative;
+    top: -10px;
+    left: 10px;
     border-style: none;
     padding: 0.5rem;
     border-radius: 5px;
@@ -391,7 +391,13 @@
     color: #fff;
     font-size: 0.8rem;
     cursor: pointer;
+    z-index: 0;
   }
+
+  .visible {
+  opacity: 1;
+  pointer-events: auto;
+}
   
   #btn:active {
     transform: translateY(2px);

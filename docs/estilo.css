@@ -62,8 +62,16 @@ footer img {
     max-height: 100%; 
     max-width: 100%;  
     object-fit: contain;
+    transform: translateX(35%);
 }
 
+.CURSO {
+    transform: translateX(35%);
+}
+
+.repo {
+   transform: translateX(25%); 
+}
 
 .menu {
     list-style-type: none;

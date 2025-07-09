@@ -107,3 +107,106 @@ secciones.forEach(seccion => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const grupos = document.querySelectorAll('.grupo-btn');
+const preguntaPrecio = document.getElementById('pregunta-precio');
+const precio = document.getElementById('precio');
+const enviarBtn = document.getElementById('enviar-encuesta');
+const resultado = document.getElementById('resultado');
+let grupoSeleccionado = '';
+
+const guardado = localStorage.getItem('datosEncuesta');
+const datosEncuesta = guardado ? JSON.parse(guardado) : {
+  'BTS': [],
+  'BLACKPINK': [],
+  'Stray Kids': [],
+  'Twice': [],
+  'ATEEZ': [],
+  'Mamamoo': [],
+};
+
+let grafico = null;
+
+// Selección del grupo
+grupos.forEach(btn => {
+  btn.addEventListener('click', () => {
+    grupoSeleccionado = btn.dataset.nombre;
+    preguntaPrecio.style.display = 'block';
+  });
+});
+
+// Enviar datos y mostrar resultados
+enviarBtn.addEventListener('click', () => {
+  const valor = Number(precio.value);
+  if (!grupoSeleccionado) return alert('Selecciona un grupo primero.');
+  if (isNaN(valor) || valor <= 0) return alert('Ingresa un valor válido.');
+
+  datosEncuesta[grupoSeleccionado].push(valor);
+  localStorage.setItem('datosEncuesta', JSON.stringify(datosEncuesta));
+  mostrarResultados();
+});
+
+// Función para mostrar resultados con gráfico corregido
+function mostrarResultados() {
+  preguntaPrecio.style.display = 'none';
+  resultado.style.display = 'block';
+
+  const labels = Object.keys(datosEncuesta);
+  const valoresPromedio = labels.map(grupo => {
+    const arr = datosEncuesta[grupo];
+    return arr.length ? Math.round(arr.reduce((a, b) => a + b, 0) / arr.length) : 0;
+  });
+
+  const ctx = document.getElementById('grafico').getContext('2d');
+
+  // Destruir gráfico previo si existe
+  if (grafico) grafico.destroy();
+
+  grafico = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Precio promedio (CLP)',
+        data: valoresPromedio,
+        backgroundColor: ['#d460ff', '#ef6a9f', '#008eb4', '#ffb1c1', '#413e3e', '#7ec4cf']
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+}
+
+// Reiniciar encuesta
+document.getElementById('reiniciar-encuesta').addEventListener('click', () => {
+  localStorage.removeItem('datosEncuesta');
+  alert('Encuesta reiniciada.');
+  location.reload();
+});
+

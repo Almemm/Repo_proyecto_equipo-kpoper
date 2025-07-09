@@ -581,3 +581,92 @@ ul, ol, li {
   transform: translateY(20px);
   transition: opacity 0.5s, transform 0.5s;
 }
+
+
+
+
+.grupo-btn {
+  margin: 10px;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+  color: #fff;
+  font-weight: bold;
+}
+.grupo-btn[data-nombre='BTS'] { background: #d460ff; }
+.grupo-btn[data-nombre='BLACKPINK'] { background: #ef6a9f; }
+.grupo-btn[data-nombre='Stray Kids'] { background: #008eb4; }
+.grupo-btn[data-nombre='Twice'] { background: #ffb1c1; }
+.grupo-btn[data-nombre='ATEEZ'] { background: #413e3e; }
+.grupo-btn[data-nombre='Mamamoo'] { background: #7ec4cf; }
+.grupo-btn:hover { opacity: 0.85; }
+
+
+input[type=number] {
+  padding: 8px;
+  width: 200px;
+}
+
+
+.encuesta-wrapper {
+  display: flow-root;
+  width: 100%;
+  overflow: visible;
+}
+
+
+.encuesta {
+  display: block;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.visualizaciones {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+#pregunta-precio, #resultado {
+  margin-top: 30px;
+}
+
+#resultado {
+  min-height: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+
+#grafico {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+
+#chart-encuesta {
+  position: static !important;
+}
+
+
+@media (max-width: 600px) {
+  #grafico {
+    height: 180px;
+  }
+}
+
+

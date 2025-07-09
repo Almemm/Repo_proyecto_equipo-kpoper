@@ -520,7 +520,41 @@
           });
         </script>
 
-  <!--final de los precios-->    
+  <!--final de los precios--> 
+
+
+  <div style="min-height: 50px;"></div>
+<section class="encuesta">
+<div class="encuesta" id="encuesta">
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <h1>🎤 Encuesta K-POP</h1>
+  <p>Elige tu grupo favorito y escribe cuánto pagarías por verlo en concierto.</p>
+
+  <div class="grupos-carrusel">
+    <button class="grupo-btn" data-nombre="BTS">BTS</button>
+    <button class="grupo-btn" data-nombre="BLACKPINK">BLACKPINK</button>
+    <button class="grupo-btn" data-nombre="Stray Kids">Stray Kids</button>
+    <button class="grupo-btn" data-nombre="Twice">Twice</button>
+    <button class="grupo-btn" data-nombre="ATEEZ">ATEEZ</button>
+    <button class="grupo-btn" data-nombre="Mamamoo">Mamamoo</button>
+  </div>
+ 
+
+  <div id="pregunta-precio" style="display:none;">
+    <h3>💸 ¿Cuánto pagarías? (CLP)</h3>
+    <input type="number" id="precio" min="0" placeholder="Ej: 250000" /><br><br>
+    <button id="enviar-encuesta">Enviar</button>
+  </div>
+
+  <button id="reiniciar-encuesta">Reiniciar encuesta</button>
+
+
+  <div id="resultado" style="display:none;">
+    <h3>📈 Resultados de la encuesta:</h3>
+    <canvas id="grafico"></canvas>
+  </div>
+  </div>
+</section>
 
 
    

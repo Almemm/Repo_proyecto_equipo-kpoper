@@ -37,8 +37,15 @@ window.PLOTLYENV=window.PLOTLYENV || {};                                    if (
           encoding: {
             color: {
               field: "Tipo de entrada",
-              scale: { range: ["green", "purple"] },
-              type: "nominal"
+              type: "nominal",
+              scale: {
+                domain: [
+                  
+                  "Máx. de ENTRADA MÁS CARA",
+                  "Mín. de ENTRADA MÁS BARATA"
+                ],
+                range: ["#50b5d0", "#ffc14C"]
+              }
             },
             tooltip: [
               { field: "año", type: "temporal" },
@@ -50,15 +57,20 @@ window.PLOTLYENV=window.PLOTLYENV || {};                                    if (
           },
           title: "Evolución de precios de entradas (mín y máx)"
         },
+
         {
-          mark: { type: "text", align: "left", dx: 5, dy: -5 },
+          mark: { type: "text", align: "left", dx: 5, dy: -5, fontSize: 9 },  // <- aquí defines el tamaño
           encoding: {
-            color: { field: "Tipo de entrada", type: "nominal" },
+            color: {
+              value: "black"
+            },
             text: { field: "Precio", format: "$.2f", type: "quantitative" },
             x: { field: "año", type: "temporal" },
             y: { field: "Precio", type: "quantitative" }
           }
         }
+        
+      
       ],
       data: {
         name: "data",
@@ -93,7 +105,7 @@ window.PLOTLYENV=window.PLOTLYENV || {};                                    if (
           { "año": "2020", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 425 },
           { "año": "2021", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 450 },
           { "año": "2022", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 565.82 },
-          { "año": "2023", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 3000 },
+          { "año": "2023", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 1000 },
           { "año": "2024", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 592 },
           { "año": "2025", "Tipo de entrada": "Máx. de ENTRADA MÁS CARA", "Precio": 743.13 }
         ]
@@ -106,122 +118,105 @@ window.PLOTLYENV=window.PLOTLYENV || {};                                    if (
     vegaEmbed("#vega-visualization-dca581d3aedf4305a3efe216c14a27f5", spec).catch(console.error);
   });
   
+  
+  
   (function(vegaEmbed) {
     const spec = {
-      "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-      "data": {
-        "name": "data-mercados"
-      },
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
       "width": 700,
       "height": 400,
       "title": {
-        "text": "Precios de entradas por mercado",
+        "text": "Precios promedio más baratos y más caros por región",
+        "subtitle": "Precios entre $0usd y $1000usd",
         "fontSize": 18,
-        "subtitle": "Verde: Entrada más barata · Morado: Entrada más cara"
+        "subtitleFontSize": 14,
+        "anchor": "middle"
+      },
+      "data": {
+        "name": "data-mercados"
       },
       "layer": [
         {
-          "mark": {"type": "line", "point": {"filled": true}},
+          "mark": { "type": "bar", "height": 14, "cornerRadius": 5 },
           "encoding": {
-            "x": {
+            "y": {
               "field": "MERCADO",
               "type": "nominal",
-              "sort": ["Sudeste Asiático", "Europa ", "Oceanía", "China", "América Latina", "Estados Unidos ", "América del Norte", "Corea del Sur", "Asia", "Sudeste asiático", "Japón", "Oceanía ", "Estados Unidos", "Japón ", "México", "Europa", "Brasil"],
-              "title": ""
+              "sort": "-x",
+              "title": "Mercado"
             },
-            "y": {
-              "field": "PRECIO",
+            "x": {
+              "field": "MIN",
               "type": "quantitative",
-              "title": "Precio en USD"
+              "title": "Precio más barato (USD)",
+              "scale": { "domain": [0, 1000] }
             },
+            "x2": { "field": "MAX" },
             "color": {
-              "field": "TIPO_ENTRADA",
+              "field": "COLOR",
               "type": "nominal",
               "scale": {
-                "domain": ["Entrada más barata (verde)", "Entrada más cara (morado)"],
-                "range": ["green", "purple"]
+                "range": [
+                  "#ee6b9f", "#e567b1", "#ffb0c1", "#d460ff", "#a194f5",
+                  "#d6a4e9", "#ffc14C", "#f6c992", "#ffe281", "#4bedf2",
+                  "#8ed3f7", "#94ecf1", "#008eb4", "#50b5d0", "#7ec4ce", "#eb8484"
+                ]
               },
-              "title": "Tipo de entrada"
+              "legend": null
             },
             "tooltip": [
-              {"field": "MERCADO", "type": "ordinal"},
-              {"field": "TIPO_ENTRADA", "type": "nominal"},
-              {"field": "PRECIO", "type": "quantitative"}
+              { "field": "MERCADO", "type": "nominal", "title": "Región" },
+              { "field": "MIN", "type": "quantitative", "title": "Precio más barato", "format": ".2f" },
+              { "field": "MAX", "type": "quantitative", "title": "Precio más caro", "format": ".2f" }
             ]
           }
         },
         {
-          "mark": {"type": "text", "align": "center", "baseline": "bottom", "dy": -10},
+          "mark": { "type": "text", "align": "left", "dx": 5 },
           "encoding": {
-            "x": {"field": "MERCADO", "type": "nominal"},
-            "y": {"field": "PRECIO", "type": "quantitative"},
-            "text": {"field": "PRECIO", "type": "quantitative", "format": "$,.0f"},
-            "color": {
-              "field": "TIPO_ENTRADA",
-              "type": "nominal",
-              "legend": null,
-              "scale": {
-                "domain": ["Entrada más barata (verde)", "Entrada más cara (morado)"],
-                "range": ["green", "purple"]
-              }
-            }
+            "y": { "field": "MERCADO", "type": "nominal", "sort": "-x" },
+            "x": { "field": "MIN", "type": "quantitative" },
+            "text": { "field": "MIN", "type": "quantitative", "format": ".2f" }
+          }
+        },
+        {
+          "mark": { "type": "text", "align": "left", "dx": 5 },
+          "encoding": {
+            "y": { "field": "MERCADO", "type": "nominal", "sort": "-x" },
+            "x": { "field": "MAX", "type": "quantitative" },
+            "text": { "field": "MAX", "type": "quantitative", "format": ".2f" }
           }
         }
       ],
       "datasets": {
         "data-mercados": [
-          {"MERCADO":"América Latina","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":17.84},
-          {"MERCADO":"América del Norte","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":57.81},
-          {"MERCADO":"Asia","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":142.0},
-          {"MERCADO":"Brasil","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":10.33},
-          {"MERCADO":"China","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":24.66},
-          {"MERCADO":"Corea del Sur","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":40.0},
-          {"MERCADO":"Estados Unidos","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":40.0},
-          {"MERCADO":"Estados Unidos ","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":50.0},
-          {"MERCADO":"Europa","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":55.0},
-          {"MERCADO":"Europa ","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":72.0},
-          {"MERCADO":"Japón","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":40.0},
-          {"MERCADO":"Japón ","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":50.0},
-          {"MERCADO":"México","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":76.11},
-          {"MERCADO":"Oceanía","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":87.12},
-          {"MERCADO":"Oceanía ","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":52.33},
-          {"MERCADO":"Sudeste Asiático","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":17.66},
-          {"MERCADO":"Sudeste asiático","TIPO_ENTRADA":"Entrada más barata (verde)","PRECIO":42.0},
-          {"MERCADO":"América Latina","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":250.0},
-          {"MERCADO":"América del Norte","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":234.83},
-          {"MERCADO":"Asia","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":230.0},
-          {"MERCADO":"Brasil","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":111.93},
-          {"MERCADO":"China","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":297.74},
-          {"MERCADO":"Corea del Sur","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":230.0},
-          {"MERCADO":"Estados Unidos","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":215.0},
-          {"MERCADO":"Estados Unidos ","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":250.0},
-          {"MERCADO":"Europa","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":120.0},
-          {"MERCADO":"Europa ","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":335.98},
-          {"MERCADO":"Japón","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":230.0},
-          {"MERCADO":"Japón ","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":160.52},
-          {"MERCADO":"México","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":142.07},
-          {"MERCADO":"Oceanía","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":335.94},
-          {"MERCADO":"Oceanía ","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":220.06},
-          {"MERCADO":"Sudeste Asiático","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":390.0},
-          {"MERCADO":"Sudeste asiático","TIPO_ENTRADA":"Entrada más cara (morado)","PRECIO":230.0}
+          { "MERCADO": "América Del Norte", "MIN": 50.00, "MAX": 235.00, "COLOR": "1" },
+          { "MERCADO": "América Latina", "MIN": 18.00, "MAX": 330.00, "COLOR": "2" },
+          { "MERCADO": "Brasil", "MIN": 0.00, "MAX": 457.00, "COLOR": "3" },
+          { "MERCADO": "China", "MIN": 25.00, "MAX": 348.00, "COLOR": "4" },
+          { "MERCADO": "Corea Del Sur", "MIN": 0.00, "MAX": 230.00, "COLOR": "5" },
+          { "MERCADO": "Estados Unidos", "MIN": 29.00, "MAX": 405.00, "COLOR": "6" },
+          { "MERCADO": "Europa", "MIN": 43.00, "MAX": 743.00, "COLOR": "7" },
+          { "MERCADO": "Japón", "MIN": 40.00, "MAX": 400.00, "COLOR": "8" },
+          { "MERCADO": "México", "MIN": 25.00, "MAX": 311.00, "COLOR": "9" }
         ]
       }
-      
-    
     };
   
     const embedOpt = {mode: "vega-lite"};
-  const el = document.getElementById("vis-grafico-mercados");
-
-  function showError(el, error) {
-    el.innerHTML = `<div style="color:red;">
-      <p>JavaScript Error: ${error.message}</p>
-    </div>`;
-    throw error;
-  }
-
-  vegaEmbed("#vis-grafico-mercados", spec, embedOpt).catch(error => showError(el, error));
-})(vegaEmbed);
+    const el = document.getElementById("vis-grafico-mercados");
+  
+    function showError(el, error) {
+      el.innerHTML = `<div style="color:red;">
+        <p>JavaScript Error: ${error.message}</p>
+      </div>`;
+      throw error;
+    }
+  
+    vegaEmbed("#vis-grafico-mercados", spec, embedOpt).catch(error => showError(el, error));
+  })(vegaEmbed);
+  
+  
   
   
   

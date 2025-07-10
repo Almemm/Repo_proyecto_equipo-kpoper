@@ -59,7 +59,7 @@ window.PLOTLYENV=window.PLOTLYENV || {};                                    if (
         },
 
         {
-          mark: { type: "text", align: "left", dx: 5, dy: -5, fontSize: 9 },  // <- aquí defines el tamaño
+          mark: { type: "text", align: "left", dx: 5, dy: -5, fontSize: 9 },  
           encoding: {
             color: {
               value: "black"
@@ -148,7 +148,7 @@ window.PLOTLYENV=window.PLOTLYENV || {};                                    if (
             "x": {
               "field": "MIN",
               "type": "quantitative",
-              "title": "Precio más barato (USD)",
+              "title": "Precio en USD",
               "scale": { "domain": [0, 1000] }
             },
             "x2": { "field": "MAX" },

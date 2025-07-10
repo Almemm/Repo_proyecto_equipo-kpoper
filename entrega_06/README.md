@@ -38,6 +38,7 @@ A medida que ibamos trabajando en las visualizaciones y las secciones de la pág
 | Mercados menos explorados   | 0 | 1   | 0  |
 | Precios   |  1  | 0   |0
 | Elementos visuales   |   1 | 1   | 1   |
+| Encuesta  |   0 |0  | 1   |
 
 >Explicación 
 

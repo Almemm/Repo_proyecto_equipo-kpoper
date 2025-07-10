@@ -23,7 +23,11 @@ P, li, ul {
     color: #413e3e;
 }
 
-.INICIO, .HISTORIA a {
+.INICIO a {
+    color: #ededed;
+}
+
+.HISTORIA a {
     color: #ededed;
 }
 

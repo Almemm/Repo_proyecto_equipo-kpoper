@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "layer": [{"mark": {"type": "bar", "cornerRadius": 5, "height": 14}, "encoding": {"color": {"field": "COLOR", "legend": null, "scale": {"domain": ["1", "2", "3", "4", "5", "6", "7", "8", "9"], "range": ["#ee6b9f", "#e567b1", "#ffb0c1", "#d460ff", "#a194f5", "#d6a4e9", "#ffc14C", "#f6c992", "#ffe281"]}, "type": "nominal"}, "tooltip": [{"field": "MERCADO", "title": "Regi\u00f3n", "type": "nominal"}, {"field": "MIN", "format": ".2f", "title": "Precio m\u00e1s barato", "type": "quantitative"}, {"field": "MAX", "format": ".2f", "title": "Precio m\u00e1s caro", "type": "quantitative"}], "x": {"field": "MIN", "scale": {"domain": [0, 1000]}, "title": "Precio en USD", "type": "quantitative"}, "x2": {"field": "MAX"}, "y": {"field": "MERCADO", "sort": "-x", "title": "Mercado", "type": "nominal"}}}, {"mark": {"type": "text", "align": "left", "color": "black", "dx": 5}, "encoding": {"text": {"field": "MIN", "format": ".2f", "type": "quantitative"}, "x": {"field": "MIN", "type": "quantitative"}, "y": {"field": "MERCADO", "sort": "-x", "type": "nominal"}}}, {"mark": {"type": "text", "align": "left", "color": "black", "dx": 5}, "encoding": {"text": {"field": "MAX", "format": ".2f", "type": "quantitative"}, "x": {"field": "MAX", "type": "quantitative"}, "y": {"field": "MERCADO", "sort": "-x", "type": "nominal"}}}], "data": {"name": "data-edbcd1c26fa5dce24e6c0a40d7c258a1"}, "height": 400, "title": {"text": "Precios promedio m\u00e1s baratos y m\u00e1s caros por regi\u00f3n", "subtitle": "Precios entre $0usd y $1000usd", "fontSize": 18, "subtitleFontSize": 14, "anchor": "middle"}, "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-edbcd1c26fa5dce24e6c0a40d7c258a1": [{"MERCADO": "Am\u00e9rica Del Norte", "MIN": 50.0, "MAX": 235.0, "COLOR": "1"}, {"MERCADO": "Am\u00e9rica Latina", "MIN": 18.0, "MAX": 330.0, "COLOR": "2"}, {"MERCADO": "Brasil", "MIN": 0.0, "MAX": 457.0, "COLOR": "3"}, {"MERCADO": "China", "MIN": 25.0, "MAX": 348.0, "COLOR": "4"}, {"MERCADO": "Corea Del Sur", "MIN": 0.0, "MAX": 230.0, "COLOR": "5"}, {"MERCADO": "Estados Unidos", "MIN": 29.0, "MAX": 405.0, "COLOR": "6"}, {"MERCADO": "Europa", "MIN": 43.0, "MAX": 743.0, "COLOR": "7"}, {"MERCADO": "Jap\u00f3n", "MIN": 40.0, "MAX": 400.0, "COLOR": "8"}, {"MERCADO": "M\u00e9xico", "MIN": 25.0, "MAX": 311.0, "COLOR": "9"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
